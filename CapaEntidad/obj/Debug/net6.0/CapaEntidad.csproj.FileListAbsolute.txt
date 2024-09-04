@@ -1,0 +1,5 @@
+C:\Users\Josuan\Desktop\Silvana\SisVenta\CapaEntidad\obj\Debug\net6.0\CapaEntidad.csproj.AssemblyReference.cache
+C:\Users\Josuan\Desktop\Silvana\SisVenta\CapaEntidad\obj\Debug\net6.0\CapaEntidad.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Josuan\Desktop\Silvana\SisVenta\CapaEntidad\obj\Debug\net6.0\CapaEntidad.AssemblyInfoInputs.cache
+C:\Users\Josuan\Desktop\Silvana\SisVenta\CapaEntidad\obj\Debug\net6.0\CapaEntidad.AssemblyInfo.cs
+C:\Users\Josuan\Desktop\Silvana\SisVenta\CapaEntidad\obj\Debug\net6.0\CapaEntidad.csproj.CoreCompileInputs.cache

@@ -1,0 +1,21 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "bb54f6a8-e5b8-4dcb-94e1-941e6650b022": {
+      "ProjectGuid": "bb54f6a8-e5b8-4dcb-94e1-941e6650b022",
+      "DisplayName": "SisVentas",
+      "ColorIndex": 0
+    },
+    "2bddf592-91dd-484d-ae01-89d4150cdb57": {
+      "ProjectGuid": "2bddf592-91dd-484d-ae01-89d4150cdb57",
+      "DisplayName": "Solution Items",
+      "ColorIndex": 1
+    },
+    "6f69f784-9cd1-4a8d-af56-e0ba3204dd27": {
+      "ProjectGuid": "6f69f784-9cd1-4a8d-af56-e0ba3204dd27",
+      "DisplayName": "ClassLibrary1",
+      "ColorIndex": 2
+    }
+  },
+  "NextColorIndex": 3
+}

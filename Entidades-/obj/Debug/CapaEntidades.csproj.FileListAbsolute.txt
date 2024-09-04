@@ -1,0 +1,12 @@
+C:\Users\Josuan\Desktop\Silvana\SisVenta\Entidades-\bin\Debug\Entidades-.dll
+C:\Users\Josuan\Desktop\Silvana\SisVenta\Entidades-\bin\Debug\Entidades-.pdb
+C:\Users\Josuan\Desktop\Silvana\SisVenta\Entidades-\obj\Debug\CapaEntidades.csproj.AssemblyReference.cache
+C:\Users\Josuan\Desktop\Silvana\SisVenta\Entidades-\obj\Debug\CapaEntidades.csproj.CoreCompileInputs.cache
+C:\Users\Josuan\Desktop\Silvana\SisVenta\Entidades-\obj\Debug\Entidades-.dll
+C:\Users\Josuan\Desktop\Silvana\SisVenta\Entidades-\obj\Debug\Entidades-.pdb
+C:\Users\user\Desktop\SistemaVenta\SisVentas\Entidades-\bin\Debug\Entidades-.dll
+C:\Users\user\Desktop\SistemaVenta\SisVentas\Entidades-\bin\Debug\Entidades-.pdb
+C:\Users\user\Desktop\SistemaVenta\SisVentas\Entidades-\obj\Debug\CapaEntidades.csproj.AssemblyReference.cache
+C:\Users\user\Desktop\SistemaVenta\SisVentas\Entidades-\obj\Debug\CapaEntidades.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\SistemaVenta\SisVentas\Entidades-\obj\Debug\Entidades-.dll
+C:\Users\user\Desktop\SistemaVenta\SisVentas\Entidades-\obj\Debug\Entidades-.pdb
