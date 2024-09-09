@@ -63,7 +63,8 @@ namespace CapaData
                 {
 
                     SqlCommand cmd = new SqlCommand("SP_RegistrarCategoria".ToString(), oConexion);
-                    cmd.Parameters.AddWithValue("Descripcion", obj.Descripcion);                   
+                    cmd.Parameters.AddWithValue("Descripcion", obj.Descripcion);
+                    cmd.Parameters.AddWithValue("Estado", obj.Estado);
                     cmd.Parameters.Add("resultado", SqlDbType.Int).Direction = ParameterDirection.Output;
                     cmd.Parameters.Add("Mensaje", SqlDbType.VarChar, 500).Direction = ParameterDirection.Output;
                     cmd.CommandType = CommandType.StoredProcedure;
@@ -100,6 +101,7 @@ namespace CapaData
                     SqlCommand cmd = new SqlCommand("SP_EditarCategoria".ToString(), oConexion);
                     cmd.Parameters.AddWithValue("IdCategoria", obj.IdCategoria);
                     cmd.Parameters.AddWithValue("Descripcion", obj.Descripcion);
+                    cmd.Parameters.AddWithValue("Estado", obj.Estado);
                     cmd.Parameters.Add("resultado", SqlDbType.Int).Direction = ParameterDirection.Output;
                     cmd.Parameters.Add("Mensaje", SqlDbType.VarChar, 500).Direction = ParameterDirection.Output;
                     cmd.CommandType = CommandType.StoredProcedure;
@@ -131,10 +133,9 @@ namespace CapaData
             {
                 using (SqlConnection oConexion = new SqlConnection(Conexion.cadena))
                 {
-
-
-                    SqlCommand cmd = new SqlCommand("SP_EliminarCategoria".ToString(), oConexion);
+                    SqlCommand cmd = new SqlCommand("SP_EliminarCategoria", oConexion);
                     cmd.Parameters.AddWithValue("IdCategoria", obj.IdCategoria);
+                    cmd.Parameters.AddWithValue("Estado", obj.Estado);
                     cmd.Parameters.Add("resultado", SqlDbType.Int).Direction = ParameterDirection.Output;
                     cmd.Parameters.Add("Mensaje", SqlDbType.VarChar, 500).Direction = ParameterDirection.Output;
                     cmd.CommandType = CommandType.StoredProcedure;

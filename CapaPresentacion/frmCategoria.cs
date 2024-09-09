@@ -174,7 +174,7 @@ namespace CapaPresentacion
         {
             if (Convert.ToInt32(regid.Text) != 0)
             {
-                if (MessageBox.Show("Deseas eliminar esta descipcion?", "Mensaje", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                if (MessageBox.Show("Deseas eliminar esta descripcion?", "Mensaje", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
                     string mensaje = string.Empty;
                     Categoria obj = new Categoria()
@@ -189,6 +189,7 @@ namespace CapaPresentacion
                     {
 
                         dgvdata.Rows.RemoveAt(Convert.ToInt32(txtindice.Text));
+                        Limpia();
                     }
                     else
                     {
@@ -197,6 +198,7 @@ namespace CapaPresentacion
 
                 }
             }
+
         }
 
         private void btnbusca_Click(object sender, EventArgs e)

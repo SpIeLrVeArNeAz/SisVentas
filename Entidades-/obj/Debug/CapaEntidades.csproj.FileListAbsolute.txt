@@ -10,3 +10,9 @@ C:\Users\user\Desktop\SistemaVenta\SisVentas\Entidades-\obj\Debug\CapaEntidades.
 C:\Users\user\Desktop\SistemaVenta\SisVentas\Entidades-\obj\Debug\CapaEntidades.csproj.CoreCompileInputs.cache
 C:\Users\user\Desktop\SistemaVenta\SisVentas\Entidades-\obj\Debug\Entidades-.dll
 C:\Users\user\Desktop\SistemaVenta\SisVentas\Entidades-\obj\Debug\Entidades-.pdb
+C:\Users\user\Source\Repos\SpIeLrVeArNeAz\SisVentas\Entidades-\bin\Debug\Entidades-.dll
+C:\Users\user\Source\Repos\SpIeLrVeArNeAz\SisVentas\Entidades-\bin\Debug\Entidades-.pdb
+C:\Users\user\Source\Repos\SpIeLrVeArNeAz\SisVentas\Entidades-\obj\Debug\CapaEntidades.csproj.AssemblyReference.cache
+C:\Users\user\Source\Repos\SpIeLrVeArNeAz\SisVentas\Entidades-\obj\Debug\CapaEntidades.csproj.CoreCompileInputs.cache
+C:\Users\user\Source\Repos\SpIeLrVeArNeAz\SisVentas\Entidades-\obj\Debug\Entidades-.dll
+C:\Users\user\Source\Repos\SpIeLrVeArNeAz\SisVentas\Entidades-\obj\Debug\Entidades-.pdb

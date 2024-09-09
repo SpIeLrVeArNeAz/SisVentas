@@ -20,6 +20,7 @@ namespace CapaNegocia
         public int Registrar(Categoria obj, out string Mensaje)
         {
             Mensaje = string.Empty;
+
             if (obj.Descripcion == "")
             {
                 Mensaje += "Es necesaria la descripcion de la categoria\n";

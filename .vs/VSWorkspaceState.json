@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\CapaData"
   ],
-  "SelectedNode": "\\SisVenta.sln",
+  "SelectedNode": "\\CapaData\\CD_Categoria.cs",
   "PreviewInSolutionExplorer": false
 }
