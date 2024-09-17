@@ -9,18 +9,19 @@ using System.Threading.Tasks;
 
 namespace CapaData
 {
-    public class CD_Cliente
+    public class CD_Provedoor
     {
-        public List<Cliente> Listar()
+
+        public List<Proveedores> Listar()
         {
-            List<Cliente> lista = new List<Cliente>();
+            List<Proveedores> lista = new List<Proveedores>();
 
             using (SqlConnection oConexion = new SqlConnection(Conexion.cadena))
             {
                 try
                 {
                     StringBuilder query = new StringBuilder();
-                    query.AppendLine(" select IdCliente,Documento,NombreCompleto,Correo,Telefono,Estado From cliente\r\n");
+                    query.AppendLine(" select IdProveedor,Documento,RazonSocial,Correo,Telefono,Estado   From PROVEEDOR \r\n");
 
                     SqlCommand cmd = new SqlCommand(query.ToString(), oConexion);
                     cmd.CommandType = CommandType.Text;
@@ -30,16 +31,16 @@ namespace CapaData
 
                         while (dr.Read())
                         {
-                            lista.Add(new Cliente()
+                            lista.Add(new Proveedores()
                             {
 
-                                IdCliente = Convert.ToInt32(dr["IdCliente"]),
+                                IdProveedor = Convert.ToInt32(dr["IdProveedor"]),
                                 Documento = dr["Documento"].ToString(),
-                                NombreCompleto = dr["NombreCompleto"].ToString(),
+                                RazonSocial = dr["RazonSocial"].ToString(),
                                 Correo = dr["Correo"].ToString(),
                                 Telefono = dr["Telefono"].ToString(),
                                 Estado = Convert.ToBoolean(dr["Estado"]),
-                                
+
                             });
                         }
                     }
@@ -47,18 +48,19 @@ namespace CapaData
                 catch (Exception ex)
                 {
 
-                    lista = new List<Cliente>();
+                    lista = new List<Proveedores>();
                 }
             }
 
             return lista;
+
         }
 
-        public int Registrar(Cliente obj, out string Mensaje)
+        public int Registrar(Proveedores obj, out string Mensaje)
         {
-            int resultado = 0; 
+            int resultado = 0;
             Mensaje = string.Empty;
-            ////////No guarda
+ 
             try
             {
                 using (SqlConnection oConexion = new SqlConnection(Conexion.cadena))
@@ -66,7 +68,7 @@ namespace CapaData
 
                     SqlCommand cmd = new SqlCommand("SP_RegistraCliente".ToString(), oConexion);
                     cmd.Parameters.AddWithValue("Documento", obj.Documento);
-                    cmd.Parameters.AddWithValue("NombreCompleto", obj.NombreCompleto);
+                    cmd.Parameters.AddWithValue("RazonSocial", obj.RazonSocial);
                     cmd.Parameters.AddWithValue("Correo", obj.Correo);
                     cmd.Parameters.AddWithValue("Telefono", obj.Telefono);
                     cmd.Parameters.AddWithValue("Estado", obj.Estado);
@@ -92,7 +94,7 @@ namespace CapaData
             return resultado;
         }
 
-        public bool Editar(Cliente obj, out string Mensaje)
+        public bool Editar(Proveedores obj, out string Mensaje)
         {
             bool resultado = false;
             Mensaje = string.Empty;
@@ -102,10 +104,10 @@ namespace CapaData
                 using (SqlConnection oConexion = new SqlConnection(Conexion.cadena))
                 {
 
-                    SqlCommand cmd = new SqlCommand("SP_EditaCliente".ToString(), oConexion);
-                    cmd.Parameters.AddWithValue("IdCliente", obj.IdCliente);
+                    SqlCommand cmd = new SqlCommand("SP_RegistraProveedor".ToString(), oConexion);
+ ///pendiente de arreglar///////////////////////////
                     cmd.Parameters.AddWithValue("Documento", obj.Documento);
-                    cmd.Parameters.AddWithValue("NombreCompleto", obj.NombreCompleto);
+                    cmd.Parameters.AddWithValue("RazonSocial", obj.RazonSocial);
                     cmd.Parameters.AddWithValue("Correo", obj.Correo);
                     cmd.Parameters.AddWithValue("Telefono", obj.Telefono);
                     cmd.Parameters.AddWithValue("Estado", obj.Estado);
@@ -131,7 +133,7 @@ namespace CapaData
             return resultado;
         }
 
-        public bool Eliminar(Cliente obj, out string Mensaje)
+        public bool Eliminar(Proveedores obj, out string Mensaje)
         {
             bool respuesta = false;
             Mensaje = string.Empty;
@@ -140,13 +142,13 @@ namespace CapaData
             {
                 using (SqlConnection oConexion = new SqlConnection(Conexion.cadena))
                 {
-                    SqlCommand cmd = new SqlCommand("delete from cliente where IdCliente = @Id ", oConexion);
-                    cmd.Parameters.AddWithValue("@id", obj.IdCliente);
+                    SqlCommand cmd = new SqlCommand("delete from proveedor where IdProveedor = @Id ", oConexion);
+                    cmd.Parameters.AddWithValue("@id", obj.IdProveedor);
                     cmd.CommandType = CommandType.Text;
                     oConexion.Open();
                     respuesta = cmd.ExecuteNonQuery() > 0 ? true : false;
                 }
- 
+
 
             }
             catch (Exception ex)
@@ -158,6 +160,6 @@ namespace CapaData
 
             return respuesta;
         }
+
     }
 }
- 

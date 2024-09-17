@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label6 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.txtindice = new System.Windows.Forms.TextBox();
@@ -151,6 +151,7 @@
             this.btnlimpiab.TabIndex = 29;
             this.btnlimpiab.Text = " ";
             this.btnlimpiab.UseVisualStyleBackColor = false;
+            this.btnlimpiab.Click += new System.EventHandler(this.btnlimpiab_Click);
             // 
             // btnbusca
             // 
@@ -167,6 +168,7 @@
             this.btnbusca.TabIndex = 28;
             this.btnbusca.Text = " ";
             this.btnbusca.UseVisualStyleBackColor = false;
+            this.btnbusca.Click += new System.EventHandler(this.btnbusca_Click);
             // 
             // limpiabtn
             // 
@@ -182,6 +184,7 @@
             this.limpiabtn.TabIndex = 23;
             this.limpiabtn.Text = "Limpiar";
             this.limpiabtn.UseVisualStyleBackColor = false;
+            this.limpiabtn.Click += new System.EventHandler(this.limpiabtn_Click);
             // 
             // cbbusca
             // 
@@ -207,6 +210,7 @@
             this.Borrabtn.TabIndex = 24;
             this.Borrabtn.Text = "Borrar";
             this.Borrabtn.UseVisualStyleBackColor = false;
+            this.Borrabtn.Click += new System.EventHandler(this.Borrabtn_Click);
             // 
             // buscatxt
             // 
@@ -243,21 +247,22 @@
             this.exportar.TabIndex = 26;
             this.exportar.Text = "Exportar";
             this.exportar.UseVisualStyleBackColor = false;
+            this.exportar.Click += new System.EventHandler(this.exportar_Click);
             // 
             // dgvdata
             // 
             this.dgvdata.AllowUserToAddRows = false;
             this.dgvdata.BackgroundColor = System.Drawing.Color.White;
             this.dgvdata.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.Padding = new System.Windows.Forms.Padding(2);
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvdata.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle13.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle13.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle13.Padding = new System.Windows.Forms.Padding(2);
+            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvdata.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle13;
             this.dgvdata.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvdata.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Btnseleccionar,
@@ -273,12 +278,14 @@
             this.dgvdata.Name = "dgvdata";
             this.dgvdata.ReadOnly = true;
             this.dgvdata.RowHeadersWidth = 51;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Black;
-            this.dgvdata.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.Color.Black;
+            this.dgvdata.RowsDefaultCellStyle = dataGridViewCellStyle14;
             this.dgvdata.RowTemplate.Height = 28;
             this.dgvdata.Size = new System.Drawing.Size(980, 258);
             this.dgvdata.TabIndex = 1;
+            this.dgvdata.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvdata_CellContentClick);
+            this.dgvdata.CellPainting += new System.Windows.Forms.DataGridViewCellPaintingEventHandler(this.dgvdata_CellPainting);
             // 
             // panel4
             // 
@@ -334,6 +341,7 @@
             this.guardabtn.TabIndex = 22;
             this.guardabtn.Text = "Guardar";
             this.guardabtn.UseVisualStyleBackColor = false;
+            this.guardabtn.Click += new System.EventHandler(this.guardabtn_Click);
             // 
             // txtTelefono
             // 
@@ -342,7 +350,6 @@
             this.txtTelefono.Location = new System.Drawing.Point(491, 36);
             this.txtTelefono.Multiline = true;
             this.txtTelefono.Name = "txtTelefono";
-            this.txtTelefono.PasswordChar = '*';
             this.txtTelefono.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.txtTelefono.Size = new System.Drawing.Size(124, 24);
             this.txtTelefono.TabIndex = 17;
