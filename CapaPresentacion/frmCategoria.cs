@@ -28,9 +28,6 @@ namespace CapaPresentacion
             cbestado.DisplayMember = "Texto";
             cbestado.ValueMember = "Valor";
             cbestado.SelectedIndex = 0;
-
- 
-
             
             foreach (DataGridViewColumn columna in dgvdata.Columns)
             {
@@ -235,5 +232,7 @@ namespace CapaPresentacion
         {
             Limpia();
         }
+
+     
     }
 }
