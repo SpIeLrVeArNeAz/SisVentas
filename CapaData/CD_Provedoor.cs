@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+//video 13............
+
 namespace CapaData
 {
     public class CD_Provedoor
@@ -65,8 +67,7 @@ namespace CapaData
             {
                 using (SqlConnection oConexion = new SqlConnection(Conexion.cadena))
                 {
-
-                    SqlCommand cmd = new SqlCommand("SP_RegistraCliente".ToString(), oConexion);
+                    SqlCommand cmd = new SqlCommand("SP_RegistraProveedor".ToString(), oConexion);
                     cmd.Parameters.AddWithValue("Documento", obj.Documento);
                     cmd.Parameters.AddWithValue("RazonSocial", obj.RazonSocial);
                     cmd.Parameters.AddWithValue("Correo", obj.Correo);
@@ -104,8 +105,8 @@ namespace CapaData
                 using (SqlConnection oConexion = new SqlConnection(Conexion.cadena))
                 {
 
-                    SqlCommand cmd = new SqlCommand("SP_RegistraProveedor".ToString(), oConexion);
- ///pendiente de arreglar///////////////////////////
+                    SqlCommand cmd = new SqlCommand("SP_EditaProveedores".ToString(), oConexion);
+                    cmd.Parameters.AddWithValue("IdProveedor", obj.IdProveedor);
                     cmd.Parameters.AddWithValue("Documento", obj.Documento);
                     cmd.Parameters.AddWithValue("RazonSocial", obj.RazonSocial);
                     cmd.Parameters.AddWithValue("Correo", obj.Correo);

@@ -58,7 +58,7 @@ namespace CapaData
         {
             int resultado = 0; 
             Mensaje = string.Empty;
-            ////////No guarda
+ 
             try
             {
                 using (SqlConnection oConexion = new SqlConnection(Conexion.cadena))

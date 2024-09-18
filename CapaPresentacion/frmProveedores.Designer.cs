@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
@@ -62,7 +62,7 @@
             this.txtTelefono = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txtCorr = new System.Windows.Forms.TextBox();
-            this.txtNombreCompleto = new System.Windows.Forms.TextBox();
+            this.txtRazonSocial = new System.Windows.Forms.TextBox();
             this.txtDocumento = new System.Windows.Forms.TextBox();
             this.cbestado = new System.Windows.Forms.ComboBox();
             this.txtCorreo = new System.Windows.Forms.Label();
@@ -235,15 +235,15 @@
             this.dgvdata.AllowUserToAddRows = false;
             this.dgvdata.BackgroundColor = System.Drawing.Color.White;
             this.dgvdata.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle7.Padding = new System.Windows.Forms.Padding(2);
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvdata.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.Padding = new System.Windows.Forms.Padding(2);
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvdata.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvdata.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvdata.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Btnseleccionar,
@@ -259,9 +259,9 @@
             this.dgvdata.Name = "dgvdata";
             this.dgvdata.ReadOnly = true;
             this.dgvdata.RowHeadersWidth = 51;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.Black;
-            this.dgvdata.RowsDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
+            this.dgvdata.RowsDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvdata.RowTemplate.Height = 28;
             this.dgvdata.Size = new System.Drawing.Size(980, 258);
             this.dgvdata.TabIndex = 1;
@@ -348,7 +348,7 @@
             this.panel2.Controls.Add(this.txtTelefono);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.txtCorr);
-            this.panel2.Controls.Add(this.txtNombreCompleto);
+            this.panel2.Controls.Add(this.txtRazonSocial);
             this.panel2.Controls.Add(this.txtDocumento);
             this.panel2.Controls.Add(this.cbestado);
             this.panel2.Controls.Add(this.txtCorreo);
@@ -473,16 +473,16 @@
             this.txtCorr.Size = new System.Drawing.Size(124, 24);
             this.txtCorr.TabIndex = 15;
             // 
-            // txtNombreCompleto
+            // txtRazonSocial
             // 
-            this.txtNombreCompleto.AcceptsTab = true;
-            this.txtNombreCompleto.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtNombreCompleto.Location = new System.Drawing.Point(170, 36);
-            this.txtNombreCompleto.Multiline = true;
-            this.txtNombreCompleto.Name = "txtNombreCompleto";
-            this.txtNombreCompleto.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.txtNombreCompleto.Size = new System.Drawing.Size(124, 24);
-            this.txtNombreCompleto.TabIndex = 14;
+            this.txtRazonSocial.AcceptsTab = true;
+            this.txtRazonSocial.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtRazonSocial.Location = new System.Drawing.Point(170, 36);
+            this.txtRazonSocial.Multiline = true;
+            this.txtRazonSocial.Name = "txtRazonSocial";
+            this.txtRazonSocial.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtRazonSocial.Size = new System.Drawing.Size(124, 24);
+            this.txtRazonSocial.TabIndex = 14;
             // 
             // txtDocumento
             // 
@@ -582,7 +582,7 @@
         private System.Windows.Forms.TextBox txtTelefono;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtCorr;
-        private System.Windows.Forms.TextBox txtNombreCompleto;
+        private System.Windows.Forms.TextBox txtRazonSocial;
         private System.Windows.Forms.TextBox txtDocumento;
         private System.Windows.Forms.ComboBox cbestado;
         private System.Windows.Forms.Label txtCorreo;

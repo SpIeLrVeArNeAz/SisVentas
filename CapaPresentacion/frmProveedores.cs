@@ -59,23 +59,23 @@ namespace CapaPresentacion
         {
             string mensaje = string.Empty;
 
-            Cliente objCliente = new Cliente()
+            Proveedores obj  = new Proveedores()
             {
-                IdCliente = Convert.ToInt32(regid.Text),
+                IdProveedor = Convert.ToInt32(regid.Text),
                 Documento = txtDocumento.Text,
-                NombreCompleto = txtNombreCompleto.Text,
+                RazonSocial = txtRazonSocial.Text,
                 Correo = txtCorreo.Text,
                 Telefono = txtTelefono.Text,
                 Estado = Convert.ToInt32(((Opcioncb)cbestado.SelectedItem).Valor) == 1 ? true : false
             };
 
-            if (objCliente.IdCliente == 0)
+            if (obj.IdProveedor == 0)
             {
-                int IdCliente = new CN_Cliente().Registrar(objCliente, out mensaje);
+                int IdProveedor = new CN_Proveedor().Registrar(obj , out mensaje);
 
-                if (IdCliente != 0)
+                if (IdProveedor != 0)
                 {
-                    dgvdata.Rows.Add(new object[] { "",IdCliente,txtDocumento.Text,txtNombreCompleto.Text, txtCorr.Text, txtTelefono.Text,
+                    dgvdata.Rows.Add(new object[] { "",IdProveedor,txtDocumento.Text,txtRazonSocial.Text, txtCorr.Text, txtTelefono.Text,
                ((Opcioncb)cbestado.SelectedItem).Valor.ToString(),
                ((Opcioncb)cbestado.SelectedItem).Texto.ToString(),
             });
@@ -90,13 +90,13 @@ namespace CapaPresentacion
             }
             else
             {
-                bool resultado = new CN_Cliente().Editar(objCliente, out mensaje);
+                bool resultado = new CN_Proveedor().Editar(obj, out mensaje);
                 if (resultado)
                 {
                     DataGridViewRow row = dgvdata.Rows[Convert.ToInt32(txtindice.Text)];
                     row.Cells["id"].Value = regid.Text;
                     row.Cells["Documento"].Value = txtDocumento.Text;
-                    row.Cells["NombreCompleto"].Value = txtNombreCompleto.Text;
+                    row.Cells["RazonSocial"].Value = txtRazonSocial.Text;
                     row.Cells["Correo"].Value = txtCorr.Text;
                     row.Cells["Telefono"].Value = txtTelefono.Text;
                     row.Cells["EstadoValor"].Value = ((Opcioncb)cbestado.SelectedItem).Valor.ToString();
@@ -119,7 +119,7 @@ namespace CapaPresentacion
             txtindice.Text = "-1";
             regid.Text = "0";
             txtDocumento.Text = "";
-            txtNombreCompleto.Text = "";
+            txtRazonSocial.Text = "";
             txtCorr.Text = "";
             txtTelefono.Text = "";
             cbestado.SelectedIndex = 0;
@@ -156,7 +156,7 @@ namespace CapaPresentacion
                     txtindice.Text = indice.ToString();
                     regid.Text = dgvdata.Rows[indice].Cells["Id"].Value.ToString();
                     txtDocumento.Text = dgvdata.Rows[indice].Cells["Documento"].Value.ToString();
-                    txtNombreCompleto.Text = dgvdata.Rows[indice].Cells["NombreCompleto"].Value.ToString();
+                    txtRazonSocial.Text = dgvdata.Rows[indice].Cells["RazonSocial"].Value.ToString();
                     txtCorr.Text = dgvdata.Rows[indice].Cells["Correo"].Value.ToString();
                     txtTelefono.Text = dgvdata.Rows[indice].Cells["Telefono"].Value.ToString();
                     string estado = dgvdata.Rows[indice].Cells["Estado"].Value.ToString();
@@ -185,16 +185,16 @@ namespace CapaPresentacion
         {
             if (Convert.ToInt32(regid.Text) != 0)
             {
-                if (MessageBox.Show("Deseas eliminar el Cliente?", "Mensaje", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                if (MessageBox.Show("Deseas eliminar el Proveedor?", "Mensaje", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
                     string mensaje = string.Empty;
-                    Cliente objCliente = new Cliente()
+                    Proveedores obj  = new Proveedores()
                     {
 
-                        IdCliente = Convert.ToInt32(regid.Text)
+                        IdProveedor = Convert.ToInt32(regid.Text)
                     };
 
-                    bool respuesta = new CN_Cliente().Eliminar(objCliente, out mensaje);
+                    bool respuesta = new CN_Proveedor().Eliminar(obj , out mensaje);
 
                     if (respuesta)
                     {
