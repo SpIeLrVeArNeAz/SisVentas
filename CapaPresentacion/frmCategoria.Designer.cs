@@ -58,6 +58,7 @@
             this.cbestado = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.exportar = new FontAwesome.Sharp.IconButton();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvdata)).BeginInit();
@@ -300,6 +301,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.Controls.Add(this.exportar);
             this.panel2.Controls.Add(this.Borrabtn);
             this.panel2.Controls.Add(this.limpiabtn);
             this.panel2.Controls.Add(this.label6);
@@ -411,6 +413,22 @@
             this.panel1.Size = new System.Drawing.Size(1118, 14);
             this.panel1.TabIndex = 5;
             // 
+            // exportar
+            // 
+            this.exportar.BackColor = System.Drawing.Color.LightBlue;
+            this.exportar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.exportar.Font = new System.Drawing.Font("Verdana", 9.25F, System.Drawing.FontStyle.Italic);
+            this.exportar.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.exportar.IconColor = System.Drawing.Color.Black;
+            this.exportar.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.exportar.Location = new System.Drawing.Point(822, 36);
+            this.exportar.Name = "exportar";
+            this.exportar.Size = new System.Drawing.Size(130, 27);
+            this.exportar.TabIndex = 27;
+            this.exportar.Text = "Exportar";
+            this.exportar.UseVisualStyleBackColor = false;
+            this.exportar.Click += new System.EventHandler(this.exportar_Click);
+            // 
             // frmCategoria
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -463,5 +481,6 @@
         private System.Windows.Forms.TextBox txtindice;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox regid;
+        private FontAwesome.Sharp.IconButton exportar;
     }
 }

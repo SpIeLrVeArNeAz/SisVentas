@@ -254,7 +254,7 @@ namespace CapaPresentacion
             {
                 MessageBox.Show("No hay datos para exportar", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
-            else
+            else   //////////////////////////////checking
             {
                 DataTable dt = new DataTable();
                 foreach (DataGridViewColumn colum in dgvdata.Columns)
@@ -271,7 +271,7 @@ namespace CapaPresentacion
                             row.Cells[3].Value.ToString(),
                             row.Cells[4].Value.ToString(),
                             row.Cells[5].Value.ToString(),
-                            row.Cells[7].Value.ToString(),
+                            //row.Cells[6].Value.ToString(),
 
                         });
                 }

@@ -17,6 +17,8 @@ namespace CapaPresentacion
             InitializeComponent();
         }
 
+        //Funciona bien esta
+
         private void frmProducto_Load(object sender, EventArgs e)
         {
             cbestado.Items.Add(new Opcioncb() { Valor = 1, Texto = "Activo" });

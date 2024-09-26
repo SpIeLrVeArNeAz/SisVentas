@@ -1,6 +1,7 @@
 ﻿using CapaEntidad;
 using CapaNegocia;
 using CapaPresentacion.Utilidades;
+using ClosedXML.Excel;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -19,6 +20,8 @@ namespace CapaPresentacion
         {
             InitializeComponent();
         }
+
+        //Funciona bien esta
 
         private void frmCategoria_Load(object sender, EventArgs e)
         {
@@ -135,8 +138,6 @@ namespace CapaPresentacion
                 e.Handled = true;
 
             }
-
-
         }
 
         private void dgvdata_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -233,6 +234,52 @@ namespace CapaPresentacion
             Limpia();
         }
 
-     
+        private void exportar_Click(object sender, EventArgs e)
+        {
+            if (dgvdata.Rows.Count < 1)
+            {
+                MessageBox.Show("No hay datos para exportar", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+            else
+            {
+                DataTable dt = new DataTable();
+                foreach (DataGridViewColumn colum in dgvdata.Columns)
+                {
+                    if (colum.HeaderText != "" && colum.Visible)
+                        dt.Columns.Add(colum.HeaderText, typeof(string));
+                }
+                foreach (DataGridViewRow row in dgvdata.Rows)
+                {
+                    if (row.Visible)
+                        dt.Rows.Add(new object[]{
+                            row.Cells[0].Value.ToString(),
+                            row.Cells[2].Value.ToString(),
+                            row.Cells[4].Value.ToString(),
+
+                        });
+                }
+
+                SaveFileDialog saveFile = new SaveFileDialog();
+                saveFile.FileName = string.Format("ReporteCategoria_{0}.xlsx",
+                    DateTime.Now.ToString("ddMMyyyyHHmmss"));
+                saveFile.Filter = "Excel Files | *.xlsx";
+
+                if (saveFile.ShowDialog() == DialogResult.OK)
+                {
+                    try
+                    {
+                        XLWorkbook wb = new XLWorkbook();
+                        var hoja = wb.Worksheets.Add(dt, "Informe");
+                        hoja.ColumnsUsed().AdjustToContents();
+                        wb.SaveAs(saveFile.FileName);
+                        MessageBox.Show("Reporte Generado", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    catch
+                    {
+                        MessageBox.Show("Error al Generar Reporte", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+            }
+        }
     }
 }

@@ -383,6 +383,7 @@
             this.exportar.TabIndex = 26;
             this.exportar.Text = "Exportar";
             this.exportar.UseVisualStyleBackColor = false;
+            this.exportar.Click += new System.EventHandler(this.exportar_Click);
             // 
             // Borrabtn
             // 

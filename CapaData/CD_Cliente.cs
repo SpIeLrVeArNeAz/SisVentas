@@ -22,8 +22,10 @@ namespace CapaData
                     StringBuilder query = new StringBuilder();
                     query.AppendLine(" select IdCliente,Documento,NombreCompleto,Correo,Telefono,Estado From cliente\r\n");
 
-                    SqlCommand cmd = new SqlCommand(query.ToString(), oConexion);
-                    cmd.CommandType = CommandType.Text;
+                    SqlCommand cmd = new SqlCommand(query.ToString(), oConexion)
+                    {
+                        CommandType = CommandType.Text
+                    };
                     oConexion.Open();
                     using (SqlDataReader dr = cmd.ExecuteReader())
                     {
@@ -144,7 +146,7 @@ namespace CapaData
                     cmd.Parameters.AddWithValue("@id", obj.IdCliente);
                     cmd.CommandType = CommandType.Text;
                     oConexion.Open();
-                    respuesta = cmd.ExecuteNonQuery() > 0 ? true : false;
+                    respuesta = cmd.ExecuteNonQuery() > 0;
                 }
  
 

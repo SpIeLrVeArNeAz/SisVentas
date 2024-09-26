@@ -47,7 +47,7 @@ namespace CapaData
                         }
                     }
                 }
-                catch (Exception ex)
+                catch (Exception)
                 {
 
                     lista = new List<Proveedores>();
