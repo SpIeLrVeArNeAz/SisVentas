@@ -120,6 +120,10 @@ namespace CapaPresentacion
             AbreForms((IconMenuItem)sender, new frmReportes());
         }
 
-      
+        private void submenuNegocio_Click(object sender, EventArgs e)
+        {
+            AbreForms(menumantenimiento, new FrmNegocio());
+
+        }
     }
 }
