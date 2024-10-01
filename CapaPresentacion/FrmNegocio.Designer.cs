@@ -32,11 +32,11 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.guardabtn = new FontAwesome.Sharp.IconButton();
-            this.txtdescripcion = new System.Windows.Forms.TextBox();
-            this.txtNombreCompleto = new System.Windows.Forms.TextBox();
-            this.txtDocumento = new System.Windows.Forms.TextBox();
+            this.txtdireccion = new System.Windows.Forms.TextBox();
+            this.txtruc = new System.Windows.Forms.TextBox();
+            this.txtnombre = new System.Windows.Forms.TextBox();
             this.txtCorreo = new System.Windows.Forms.Label();
-            this.txtruc = new System.Windows.Forms.Label();
+            this.ruc = new System.Windows.Forms.Label();
             this.txtNombreNego = new System.Windows.Forms.Label();
             this.uploadbtn = new FontAwesome.Sharp.IconButton();
             this.label1 = new System.Windows.Forms.Label();
@@ -71,11 +71,11 @@
             // 
             this.groupBox1.BackColor = System.Drawing.Color.White;
             this.groupBox1.Controls.Add(this.guardabtn);
-            this.groupBox1.Controls.Add(this.txtdescripcion);
-            this.groupBox1.Controls.Add(this.txtNombreCompleto);
-            this.groupBox1.Controls.Add(this.txtDocumento);
-            this.groupBox1.Controls.Add(this.txtCorreo);
+            this.groupBox1.Controls.Add(this.txtdireccion);
             this.groupBox1.Controls.Add(this.txtruc);
+            this.groupBox1.Controls.Add(this.txtnombre);
+            this.groupBox1.Controls.Add(this.txtCorreo);
+            this.groupBox1.Controls.Add(this.ruc);
             this.groupBox1.Controls.Add(this.txtNombreNego);
             this.groupBox1.Controls.Add(this.uploadbtn);
             this.groupBox1.Controls.Add(this.label1);
@@ -102,38 +102,38 @@
             this.guardabtn.Text = "Guardar";
             this.guardabtn.UseVisualStyleBackColor = false;
             // 
-            // txtdescripcion
+            // txtdireccion
             // 
-            this.txtdescripcion.AcceptsTab = true;
-            this.txtdescripcion.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtdescripcion.Location = new System.Drawing.Point(353, 250);
-            this.txtdescripcion.Multiline = true;
-            this.txtdescripcion.Name = "txtdescripcion";
-            this.txtdescripcion.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.txtdescripcion.Size = new System.Drawing.Size(265, 24);
-            this.txtdescripcion.TabIndex = 33;
+            this.txtdireccion.AcceptsTab = true;
+            this.txtdireccion.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtdireccion.Location = new System.Drawing.Point(353, 250);
+            this.txtdireccion.Multiline = true;
+            this.txtdireccion.Name = "txtdireccion";
+            this.txtdireccion.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtdireccion.Size = new System.Drawing.Size(265, 24);
+            this.txtdireccion.TabIndex = 33;
             // 
-            // txtNombreCompleto
+            // txtruc
             // 
-            this.txtNombreCompleto.AcceptsTab = true;
-            this.txtNombreCompleto.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtNombreCompleto.Location = new System.Drawing.Point(353, 175);
-            this.txtNombreCompleto.Multiline = true;
-            this.txtNombreCompleto.Name = "txtNombreCompleto";
-            this.txtNombreCompleto.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.txtNombreCompleto.Size = new System.Drawing.Size(265, 28);
-            this.txtNombreCompleto.TabIndex = 32;
+            this.txtruc.AcceptsTab = true;
+            this.txtruc.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtruc.Location = new System.Drawing.Point(353, 175);
+            this.txtruc.Multiline = true;
+            this.txtruc.Name = "txtruc";
+            this.txtruc.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtruc.Size = new System.Drawing.Size(265, 28);
+            this.txtruc.TabIndex = 32;
             // 
-            // txtDocumento
+            // txtnombre
             // 
-            this.txtDocumento.AcceptsTab = true;
-            this.txtDocumento.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtDocumento.Location = new System.Drawing.Point(353, 90);
-            this.txtDocumento.Multiline = true;
-            this.txtDocumento.Name = "txtDocumento";
-            this.txtDocumento.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.txtDocumento.Size = new System.Drawing.Size(265, 29);
-            this.txtDocumento.TabIndex = 31;
+            this.txtnombre.AcceptsTab = true;
+            this.txtnombre.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtnombre.Location = new System.Drawing.Point(353, 90);
+            this.txtnombre.Multiline = true;
+            this.txtnombre.Name = "txtnombre";
+            this.txtnombre.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtnombre.Size = new System.Drawing.Size(265, 29);
+            this.txtnombre.TabIndex = 31;
             // 
             // txtCorreo
             // 
@@ -141,19 +141,19 @@
             this.txtCorreo.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Italic);
             this.txtCorreo.Location = new System.Drawing.Point(337, 220);
             this.txtCorreo.Name = "txtCorreo";
-            this.txtCorreo.Size = new System.Drawing.Size(93, 18);
+            this.txtCorreo.Size = new System.Drawing.Size(76, 18);
             this.txtCorreo.TabIndex = 30;
-            this.txtCorreo.Text = "Descripcion";
+            this.txtCorreo.Text = "Direccion";
             // 
-            // txtruc
+            // ruc
             // 
-            this.txtruc.AutoSize = true;
-            this.txtruc.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Italic);
-            this.txtruc.Location = new System.Drawing.Point(337, 140);
-            this.txtruc.Name = "txtruc";
-            this.txtruc.Size = new System.Drawing.Size(49, 18);
-            this.txtruc.TabIndex = 29;
-            this.txtruc.Text = "R.U.C";
+            this.ruc.AutoSize = true;
+            this.ruc.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Italic);
+            this.ruc.Location = new System.Drawing.Point(337, 140);
+            this.ruc.Name = "ruc";
+            this.ruc.Size = new System.Drawing.Size(49, 18);
+            this.ruc.TabIndex = 29;
+            this.ruc.Text = "R.U.C";
             // 
             // txtNombreNego
             // 
@@ -180,6 +180,7 @@
             this.uploadbtn.TabIndex = 27;
             this.uploadbtn.Text = " ";
             this.uploadbtn.UseVisualStyleBackColor = false;
+            this.uploadbtn.Click += new System.EventHandler(this.uploadbtn_Click);
             // 
             // label1
             // 
@@ -229,6 +230,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "FrmNegocio";
             this.Text = "FrmNegocio";
+            this.Load += new System.EventHandler(this.FrmNegocio_Load);
             this.panel2.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -250,11 +252,11 @@
         private System.Windows.Forms.Label label1;
         private FontAwesome.Sharp.IconButton uploadbtn;
         private FontAwesome.Sharp.IconButton guardabtn;
-        private System.Windows.Forms.TextBox txtdescripcion;
-        private System.Windows.Forms.TextBox txtNombreCompleto;
-        private System.Windows.Forms.TextBox txtDocumento;
+        private System.Windows.Forms.TextBox txtdireccion;
+        private System.Windows.Forms.TextBox txtruc;
+        private System.Windows.Forms.TextBox txtnombre;
         private System.Windows.Forms.Label txtCorreo;
-        private System.Windows.Forms.Label txtruc;
+        private System.Windows.Forms.Label ruc;
         private System.Windows.Forms.Label txtNombreNego;
     }
 }

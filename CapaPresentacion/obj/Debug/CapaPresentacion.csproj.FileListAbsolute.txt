@@ -85,3 +85,4 @@ C:\Users\user\Source\Repos\SpIeLrVeArNeAz\SisVentas\CapaPresentacion\bin\Debug\S
 C:\Users\user\Source\Repos\SpIeLrVeArNeAz\SisVentas\CapaPresentacion\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\user\Source\Repos\SpIeLrVeArNeAz\SisVentas\CapaPresentacion\obj\Debug\CapaPresentacion.frmClientes.resources
 C:\Users\user\Source\Repos\SpIeLrVeArNeAz\SisVentas\CapaPresentacion\obj\Debug\CapaPresentacion.frmProveedores.resources
+C:\Users\user\Source\Repos\SpIeLrVeArNeAz\SisVentas\CapaPresentacion\obj\Debug\CapaPresentacion.FrmNegocio.resources

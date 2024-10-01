@@ -3,52 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\user\\source\\repos\\SpIeLrVeArNeAz\\SisVentas\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3E965145-42F4-4B36-8674-AC89EDC62449}|CapaData\\CapaData.csproj|C:\\Users\\user\\source\\repos\\SpIeLrVeArNeAz\\SisVentas\\capadata\\cd_negocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3E965145-42F4-4B36-8674-AC89EDC62449}|CapaData\\CapaData.csproj|solutionrelative:capadata\\cd_negocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3E965145-42F4-4B36-8674-AC89EDC62449}|CapaData\\CapaData.csproj|c:\\users\\user\\source\\repos\\spielrvearneaz\\sisventas\\capadata\\cd_provedoor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3E965145-42F4-4B36-8674-AC89EDC62449}|CapaData\\CapaData.csproj|solutionrelative:capadata\\cd_provedoor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{078C8904-CDDB-48F4-9A63-BFAFD57CCF0C}|Entidades-\\CapaEntidades.csproj|c:\\users\\user\\source\\repos\\spielrvearneaz\\sisventas\\entidades-\\negocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{078C8904-CDDB-48F4-9A63-BFAFD57CCF0C}|Entidades-\\CapaEntidades.csproj|solutionrelative:entidades-\\negocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{078C8904-CDDB-48F4-9A63-BFAFD57CCF0C}|Entidades-\\CapaEntidades.csproj|c:\\users\\user\\source\\repos\\spielrvearneaz\\sisventas\\entidades-\\compra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{078C8904-CDDB-48F4-9A63-BFAFD57CCF0C}|Entidades-\\CapaEntidades.csproj|solutionrelative:entidades-\\compra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AFB9042A-5C31-444D-A354-CD86B1762D4C}|CapaPresentacion\\CapaPresentacion.csproj|c:\\users\\user\\source\\repos\\spielrvearneaz\\sisventas\\capapresentacion\\frmnegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{AFB9042A-5C31-444D-A354-CD86B1762D4C}|CapaPresentacion\\CapaPresentacion.csproj|solutionrelative:capapresentacion\\frmnegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AFB9042A-5C31-444D-A354-CD86B1762D4C}|CapaPresentacion\\CapaPresentacion.csproj|c:\\users\\user\\source\\repos\\spielrvearneaz\\sisventas\\capapresentacion\\frmnegocio.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AFB9042A-5C31-444D-A354-CD86B1762D4C}|CapaPresentacion\\CapaPresentacion.csproj|solutionrelative:capapresentacion\\frmnegocio.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AFB9042A-5C31-444D-A354-CD86B1762D4C}|CapaPresentacion\\CapaPresentacion.csproj|c:\\users\\user\\source\\repos\\spielrvearneaz\\sisventas\\capapresentacion\\frmnegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{AFB9042A-5C31-444D-A354-CD86B1762D4C}|CapaPresentacion\\CapaPresentacion.csproj|C:\\Users\\user\\source\\repos\\SpIeLrVeArNeAz\\SisVentas\\capapresentacion\\frmnegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AFB9042A-5C31-444D-A354-CD86B1762D4C}|CapaPresentacion\\CapaPresentacion.csproj|solutionrelative:capapresentacion\\frmnegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AFB9042A-5C31-444D-A354-CD86B1762D4C}|CapaPresentacion\\CapaPresentacion.csproj|c:\\users\\user\\source\\repos\\spielrvearneaz\\sisventas\\capapresentacion\\frmusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{AFB9042A-5C31-444D-A354-CD86B1762D4C}|CapaPresentacion\\CapaPresentacion.csproj|solutionrelative:capapresentacion\\frmusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AFB9042A-5C31-444D-A354-CD86B1762D4C}|CapaPresentacion\\CapaPresentacion.csproj|c:\\users\\user\\source\\repos\\spielrvearneaz\\sisventas\\capapresentacion\\inicio.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AFB9042A-5C31-444D-A354-CD86B1762D4C}|CapaPresentacion\\CapaPresentacion.csproj|solutionrelative:capapresentacion\\inicio.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AFB9042A-5C31-444D-A354-CD86B1762D4C}|CapaPresentacion\\CapaPresentacion.csproj|c:\\users\\user\\source\\repos\\spielrvearneaz\\sisventas\\capapresentacion\\inicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{AFB9042A-5C31-444D-A354-CD86B1762D4C}|CapaPresentacion\\CapaPresentacion.csproj|solutionrelative:capapresentacion\\inicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AFB9042A-5C31-444D-A354-CD86B1762D4C}|CapaPresentacion\\CapaPresentacion.csproj|c:\\users\\user\\source\\repos\\spielrvearneaz\\sisventas\\capapresentacion\\inicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AFB9042A-5C31-444D-A354-CD86B1762D4C}|CapaPresentacion\\CapaPresentacion.csproj|solutionrelative:capapresentacion\\inicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AFB9042A-5C31-444D-A354-CD86B1762D4C}|CapaPresentacion\\CapaPresentacion.csproj|C:\\Users\\user\\source\\repos\\SpIeLrVeArNeAz\\SisVentas\\capapresentacion\\frmnegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{AFB9042A-5C31-444D-A354-CD86B1762D4C}|CapaPresentacion\\CapaPresentacion.csproj|solutionrelative:capapresentacion\\frmnegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1639C2EE-4D05-4FC8-AAD6-C2918E3B61E4}|CapaNegocia\\CapaNegocia.csproj|c:\\users\\user\\source\\repos\\spielrvearneaz\\sisventas\\capanegocia\\cn_negocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1639C2EE-4D05-4FC8-AAD6-C2918E3B61E4}|CapaNegocia\\CapaNegocia.csproj|solutionrelative:capanegocia\\cn_negocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3E965145-42F4-4B36-8674-AC89EDC62449}|CapaData\\CapaData.csproj|C:\\Users\\user\\source\\repos\\SpIeLrVeArNeAz\\SisVentas\\capadata\\cd_negocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3E965145-42F4-4B36-8674-AC89EDC62449}|CapaData\\CapaData.csproj|solutionrelative:capadata\\cd_negocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3E965145-42F4-4B36-8674-AC89EDC62449}|CapaData\\CapaData.csproj|C:\\Users\\user\\source\\repos\\SpIeLrVeArNeAz\\SisVentas\\capadata\\cd_provedoor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3E965145-42F4-4B36-8674-AC89EDC62449}|CapaData\\CapaData.csproj|solutionrelative:capadata\\cd_provedoor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{078C8904-CDDB-48F4-9A63-BFAFD57CCF0C}|Entidades-\\CapaEntidades.csproj|C:\\Users\\user\\source\\repos\\SpIeLrVeArNeAz\\SisVentas\\entidades-\\negocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{078C8904-CDDB-48F4-9A63-BFAFD57CCF0C}|Entidades-\\CapaEntidades.csproj|solutionrelative:entidades-\\negocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{078C8904-CDDB-48F4-9A63-BFAFD57CCF0C}|Entidades-\\CapaEntidades.csproj|C:\\Users\\user\\source\\repos\\SpIeLrVeArNeAz\\SisVentas\\entidades-\\compra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{078C8904-CDDB-48F4-9A63-BFAFD57CCF0C}|Entidades-\\CapaEntidades.csproj|solutionrelative:entidades-\\compra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -58,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 345,
-          "SelectedChildIndex": 15,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -78,33 +58,45 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CD_Provedoor.cs",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\SpIeLrVeArNeAz\\SisVentas\\CapaData\\CD_Provedoor.cs",
-              "RelativeDocumentMoniker": "CapaData\\CD_Provedoor.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\SpIeLrVeArNeAz\\SisVentas\\CapaData\\CD_Provedoor.cs",
-              "RelativeToolTip": "CapaData\\CD_Provedoor.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "FrmNegocio.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\SpIeLrVeArNeAz\\SisVentas\\CapaPresentacion\\FrmNegocio.cs",
+              "RelativeDocumentMoniker": "CapaPresentacion\\FrmNegocio.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\SpIeLrVeArNeAz\\SisVentas\\CapaPresentacion\\FrmNegocio.cs*",
+              "RelativeToolTip": "CapaPresentacion\\FrmNegocio.cs*",
+              "ViewState": "AgIAACAAAAAAAAAAAIAxwD0AAABpAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-27T21:16:05.649Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Compra.cs",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\SpIeLrVeArNeAz\\SisVentas\\Entidades-\\Compra.cs",
-              "RelativeDocumentMoniker": "Entidades-\\Compra.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\SpIeLrVeArNeAz\\SisVentas\\Entidades-\\Compra.cs",
-              "RelativeToolTip": "Entidades-\\Compra.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-27T21:08:40.635Z",
+              "WhenOpened": "2024-09-27T21:03:53.335Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "CN_Negocio.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\SpIeLrVeArNeAz\\SisVentas\\CapaNegocia\\CN_Negocio.cs",
+              "RelativeDocumentMoniker": "CapaNegocia\\CN_Negocio.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\SpIeLrVeArNeAz\\SisVentas\\CapaNegocia\\CN_Negocio.cs",
+              "RelativeToolTip": "CapaNegocia\\CN_Negocio.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-27T20:25:58.054Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FrmNegocio.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\SpIeLrVeArNeAz\\SisVentas\\CapaPresentacion\\FrmNegocio.cs",
+              "RelativeDocumentMoniker": "CapaPresentacion\\FrmNegocio.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\SpIeLrVeArNeAz\\SisVentas\\CapaPresentacion\\FrmNegocio.cs [Design]*",
+              "RelativeToolTip": "CapaPresentacion\\FrmNegocio.cs [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-27T20:28:17.461Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Negocio.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\SpIeLrVeArNeAz\\SisVentas\\Entidades-\\Negocio.cs",
               "RelativeDocumentMoniker": "Entidades-\\Negocio.cs",
@@ -112,119 +104,41 @@
               "RelativeToolTip": "Entidades-\\Negocio.cs",
               "ViewState": "AgIAAAoAAAAAAAAAAAA8wA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-27T21:07:41.156Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "FrmNegocio.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Source\\Repos\\SpIeLrVeArNeAz\\SisVentas\\CapaPresentacion\\FrmNegocio.Designer.cs",
-              "RelativeDocumentMoniker": "CapaPresentacion\\FrmNegocio.Designer.cs",
-              "ToolTip": "C:\\Users\\user\\Source\\Repos\\SpIeLrVeArNeAz\\SisVentas\\CapaPresentacion\\FrmNegocio.Designer.cs",
-              "RelativeToolTip": "CapaPresentacion\\FrmNegocio.Designer.cs",
-              "ViewState": "AgIAAJgAAAAAAAAAAAAAwNwAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-27T21:03:59.874Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-27T21:07:41.156Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "FrmNegocio.cs",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\SpIeLrVeArNeAz\\SisVentas\\CapaPresentacion\\FrmNegocio.cs",
-              "RelativeDocumentMoniker": "CapaPresentacion\\FrmNegocio.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\SpIeLrVeArNeAz\\SisVentas\\CapaPresentacion\\FrmNegocio.cs",
-              "RelativeToolTip": "CapaPresentacion\\FrmNegocio.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAAwBMAAAABAAAAAAAAAA==",
+              "Title": "Compra.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\SpIeLrVeArNeAz\\SisVentas\\Entidades-\\Compra.cs",
+              "RelativeDocumentMoniker": "Entidades-\\Compra.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\SpIeLrVeArNeAz\\SisVentas\\Entidades-\\Compra.cs",
+              "RelativeToolTip": "Entidades-\\Compra.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-27T21:03:53.335Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "frmUsers.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\SpIeLrVeArNeAz\\SisVentas\\CapaPresentacion\\frmUsers.cs",
-              "RelativeDocumentMoniker": "CapaPresentacion\\frmUsers.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\SpIeLrVeArNeAz\\SisVentas\\CapaPresentacion\\frmUsers.cs [Design]",
-              "RelativeToolTip": "CapaPresentacion\\frmUsers.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-27T20:37:04.692Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Inicio.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Source\\Repos\\SpIeLrVeArNeAz\\SisVentas\\CapaPresentacion\\Inicio.Designer.cs",
-              "RelativeDocumentMoniker": "CapaPresentacion\\Inicio.Designer.cs",
-              "ToolTip": "C:\\Users\\user\\Source\\Repos\\SpIeLrVeArNeAz\\SisVentas\\CapaPresentacion\\Inicio.Designer.cs",
-              "RelativeToolTip": "CapaPresentacion\\Inicio.Designer.cs",
-              "ViewState": "AgIAAEoBAAAAAAAAAAAAwE4BAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-27T20:34:09.444Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Inicio.cs",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\SpIeLrVeArNeAz\\SisVentas\\CapaPresentacion\\Inicio.cs",
-              "RelativeDocumentMoniker": "CapaPresentacion\\Inicio.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\SpIeLrVeArNeAz\\SisVentas\\CapaPresentacion\\Inicio.cs",
-              "RelativeToolTip": "CapaPresentacion\\Inicio.cs",
-              "ViewState": "AgIAAHYAAAAAAAAAAAAIwHwAAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-27T20:29:19.398Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Inicio.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\SpIeLrVeArNeAz\\SisVentas\\CapaPresentacion\\Inicio.cs",
-              "RelativeDocumentMoniker": "CapaPresentacion\\Inicio.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\SpIeLrVeArNeAz\\SisVentas\\CapaPresentacion\\Inicio.cs [Design]",
-              "RelativeToolTip": "CapaPresentacion\\Inicio.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-27T20:29:03.312Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-09-27T21:08:40.635Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "FrmNegocio.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\SpIeLrVeArNeAz\\SisVentas\\CapaPresentacion\\FrmNegocio.cs",
-              "RelativeDocumentMoniker": "CapaPresentacion\\FrmNegocio.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\SpIeLrVeArNeAz\\SisVentas\\CapaPresentacion\\FrmNegocio.cs [Design]",
-              "RelativeToolTip": "CapaPresentacion\\FrmNegocio.cs [Design]",
+              "Title": "CD_Provedoor.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\SpIeLrVeArNeAz\\SisVentas\\CapaData\\CD_Provedoor.cs",
+              "RelativeDocumentMoniker": "CapaData\\CD_Provedoor.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\SpIeLrVeArNeAz\\SisVentas\\CapaData\\CD_Provedoor.cs",
+              "RelativeToolTip": "CapaData\\CD_Provedoor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-27T20:28:17.461Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-09-27T21:16:05.649Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "CN_Negocio.cs",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\SpIeLrVeArNeAz\\SisVentas\\CapaNegocia\\CN_Negocio.cs",
-              "RelativeDocumentMoniker": "CapaNegocia\\CN_Negocio.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\SpIeLrVeArNeAz\\SisVentas\\CapaNegocia\\CN_Negocio.cs",
-              "RelativeToolTip": "CapaNegocia\\CN_Negocio.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-27T20:25:58.054Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "CD_Negocio.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\SpIeLrVeArNeAz\\SisVentas\\CapaData\\CD_Negocio.cs",
               "RelativeDocumentMoniker": "CapaData\\CD_Negocio.cs",
               "ToolTip": "C:\\Users\\user\\source\\repos\\SpIeLrVeArNeAz\\SisVentas\\CapaData\\CD_Negocio.cs",
               "RelativeToolTip": "CapaData\\CD_Negocio.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAASAAAAAAAAAA==",
+              "ViewState": "AgIAAG0AAAAAAAAAAAASwJQAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-27T20:25:30.8Z",
               "EditorCaption": ""

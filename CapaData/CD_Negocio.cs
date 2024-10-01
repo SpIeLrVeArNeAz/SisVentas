@@ -10,7 +10,7 @@ using System.Data;
 namespace CapaData
 {
 
-   //video 13
+//error en el where
     public  class CD_Negocio
     {
         public Negocio ObtenerDatos()
@@ -88,7 +88,6 @@ namespace CapaData
         public byte[] ObtenerLogo (out bool obtenido){ 
         obtenido = true;
             byte[] LogoBytes = new byte[0];
-
             try
             {
                 using (SqlConnection conexion = new SqlConnection(Conexion.cadena))
@@ -102,16 +101,43 @@ namespace CapaData
                     {
                         while (dr.Read())
                         {
-                            LogoBytes = (byte[])dr["Logo"];
-
-                            //obj = new Negocio()
-                            //{
-                            //    IdNegocio = int.Parse(dr["IdNegocio"].ToString()),
-                            //    Nombre = dr["Nombre"].ToString(),
-                            //    RUC = dr["RUC"].ToString(),
-                            //    Direccion = dr["Direccion"].ToString()
-                            //};
+                            LogoBytes = (byte[])dr["Logo"]; 
                         }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                obtenido = false;
+                LogoBytes =new byte[0];
+            }
+            return LogoBytes;
+        }
+
+        public bool ActualizaLogo (byte[] image, out string mensaje) {          
+            
+            mensaje = string.Empty;
+            bool respuesta = true;
+
+            try
+            {
+                using (SqlConnection conexion = new SqlConnection(Conexion.cadena))
+                {
+                    conexion.Open();
+
+                    StringBuilder query = new StringBuilder();
+                    query.AppendLine("update Negocio set Logo = @imagen,");
+                    query.AppendLine("where IdNegocio = 1;");
+
+
+                    SqlCommand cmd = new SqlCommand(query.ToString(), conexion);
+                    cmd.Parameters.AddWithValue("@imagen", image);
+                    cmd.CommandType = CommandType.Text;
+
+                    if (cmd.ExecuteNonQuery() < 1)
+                    {
+                        mensaje = "No se pudo actualizar logo";
+                        respuesta = false;
                     }
                 }
             }
@@ -120,16 +146,8 @@ namespace CapaData
                 mensaje = ex.Message;
                 respuesta = false;
             }
-
             return respuesta;
         }
-
-
-
-
-
-
-
 
     }
 }
