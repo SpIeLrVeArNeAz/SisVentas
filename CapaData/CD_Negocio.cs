@@ -13,8 +13,8 @@ namespace CapaData
 //error en el where
     public  class CD_Negocio
     {
-        public Negocio ObtenerDatos()
-        {
+        public Negocio ObtenerDatos()   {
+
             Negocio obj = new Negocio();
 
             try
@@ -26,7 +26,9 @@ namespace CapaData
                     string query = "Select IdNegocio,Nombre,RUC,Direccion  from Negocio where IdNegocio = 1";
                     SqlCommand cmd = new SqlCommand(query,conexion);
                     cmd.CommandType = CommandType.Text;
+
                     using (SqlDataReader dr = cmd.ExecuteReader()) {
+
                         while (dr.Read()) {
                             obj = new Negocio()
                             {
@@ -43,11 +45,12 @@ namespace CapaData
             {
                 obj = new Negocio();
             }
+
             return obj;
         }
 
-        public bool GuardaData(Negocio objeto, out string mensaje)
-        {
+        public bool GuardaData(Negocio objeto, out string mensaje)   {
+
             mensaje = string.Empty;
             bool respuesta = true;
 
@@ -58,29 +61,30 @@ namespace CapaData
                     conexion.Open();
                     
                     StringBuilder query = new StringBuilder();
-                    query.AppendLine("update Negocio set Nombre = @Nombre,");
-                    query.AppendLine("RUC = @Ruc,");
-                    query.AppendLine("Direccion = @Direccion");
+                    query.AppendLine("update Negocio set Nombre = @nombre,");
+                    query.AppendLine("RUC = @ruc,");
+                    query.AppendLine("Direccion = @direccion");
                     query.AppendLine("where IdNegocio = 1;");
-
 
                     SqlCommand cmd = new SqlCommand(query.ToString(), conexion);
                     cmd.Parameters.AddWithValue("@nombre",objeto.Nombre);
                     cmd.Parameters.AddWithValue("@ruc", objeto.RUC);
                     cmd.Parameters.AddWithValue("@direccion", objeto.Direccion);
                     cmd.CommandType = CommandType.Text;
+
                     if (cmd.ExecuteNonQuery() < 1) {
                         mensaje = "No se pudo guardar data";
                         respuesta = false;
                     }
+
                 }
+
             }
             catch (Exception ex)
             {
-                mensaje = ex.Message;
+                      mensaje = ex.Message;
                      respuesta=false;   
             }
-
             return respuesta;
 
         }
@@ -96,12 +100,12 @@ namespace CapaData
                     string query = "Select Logo  from Negocio where IdNegocio = 1";
                     SqlCommand cmd = new SqlCommand(query, conexion); 
                     cmd.CommandType = CommandType.Text;
-
+ 
                     using (SqlDataReader dr = cmd.ExecuteReader())
                     {
                         while (dr.Read())
                         {
-                            LogoBytes = (byte[])dr["Logo"]; 
+                            LogoBytes = (byte[ ])dr["Logo"]; 
                         }
                     }
                 }
@@ -113,6 +117,7 @@ namespace CapaData
             }
             return LogoBytes;
         }
+
 
         public bool ActualizaLogo (byte[] image, out string mensaje) {          
             
@@ -126,7 +131,7 @@ namespace CapaData
                     conexion.Open();
 
                     StringBuilder query = new StringBuilder();
-                    query.AppendLine("update Negocio set Logo = @imagen,");
+                    query.AppendLine("update Negocio set Logo = @imagen");
                     query.AppendLine("where IdNegocio = 1;");
 
 
@@ -147,6 +152,7 @@ namespace CapaData
                 respuesta = false;
             }
             return respuesta;
+
         }
 
     }

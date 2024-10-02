@@ -198,6 +198,7 @@
             this.picklogo.Location = new System.Drawing.Point(53, 69);
             this.picklogo.Name = "picklogo";
             this.picklogo.Size = new System.Drawing.Size(247, 224);
+            this.picklogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picklogo.TabIndex = 0;
             this.picklogo.TabStop = false;
             // 

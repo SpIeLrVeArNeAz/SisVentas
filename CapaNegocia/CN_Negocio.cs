@@ -1,17 +1,13 @@
 ﻿using CapaData;
 using CapaEntidad;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace CapaNegocia
 {
     public class CN_Negocio
     {
 
-      public CD_Negocio objcd_negocio = new  CD_Negocio();
+      private CD_Negocio objcd_negocio = new  CD_Negocio();
         public Negocio ObtenerDatos()
         {
             return objcd_negocio.ObtenerDatos();
@@ -22,15 +18,15 @@ namespace CapaNegocia
             Mensaje = string.Empty;
             if(obj.Nombre == "")
             {
-                Mensaje = "Es necesario el nombre \n";
+                Mensaje += "Es necesario el nombre \n";
             }
             if (obj.RUC == "")
             {
-                Mensaje = "Es necesario el RUC \n";
+                Mensaje += "Es necesario el RUC \n";
             }
             if (obj.Direccion == "")
             {
-                Mensaje = "Es necesario la Direccion \n";
+                Mensaje += "Es necesario la Direccion \n";
             }
             if (Mensaje != string.Empty)
             {

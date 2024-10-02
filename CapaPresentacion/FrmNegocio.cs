@@ -19,7 +19,8 @@ namespace CapaPresentacion
         {
             InitializeComponent();
         }
-
+  
+        
         public Image ByteToImage(byte[] imageBytes)
         {
             MemoryStream ms = new MemoryStream();
@@ -38,7 +39,6 @@ namespace CapaPresentacion
                 picklogo.Image = ByteToImage(byteimage);
 
             Negocio datos = new CN_Negocio().ObtenerDatos();
-
             txtnombre.Text = datos.Nombre;
             txtruc.Text = datos.RUC;
             txtdireccion.Text = datos.Direccion;
@@ -51,15 +51,19 @@ namespace CapaPresentacion
             OpenFileDialog oOpenFileDialog = new OpenFileDialog();
             oOpenFileDialog.FileName = "Files|*.jpg;*.jpeg;*.png";
 
-            if(oOpenFileDialog.ShowDialog() == DialogResult.OK)
+            if (oOpenFileDialog.ShowDialog() == DialogResult.OK)
             {
-                byte[] byteimage= File.ReadAllBytes(oOpenFileDialog.FileName);
-                bool respuesta = new CN_Negocio().ActualizaLogo(byteimage, out mensaje);
+                //    string imagenpPath = oOpenFileDialog.FileName;
+                //    Image image = Image.FromFile(imagenpPath);
+                //    picklogo.Image = image;
+                byte[] byteimage = File.ReadAllBytes(oOpenFileDialog.FileName);
+                 bool respuesta = new CN_Negocio().ActualizaLogo(byteimage, out mensaje);
 
-                if (respuesta)
-                    picklogo.Image= ByteToImage(byteimage);
-                else 
-                    MessageBox.Show(mensaje, "Mensaje",MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            if (respuesta)
+                picklogo.Image = ByteToImage(byteimage);
+
+            else
+                MessageBox.Show(mensaje, "Mensaje",MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
 
             }
         }
