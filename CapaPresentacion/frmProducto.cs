@@ -185,12 +185,10 @@ namespace CapaPresentacion
                 if (indice >= 0)
                 {
                     txtindice.Text = indice.ToString();
-                    regid.Text = dgvdata.Rows[indice].Cells["Id"].Value.ToString();
-                    
+                    regid.Text = dgvdata.Rows[indice].Cells["Id"].Value.ToString();                    
                     txtCodigo.Text = dgvdata.Rows[indice].Cells["Codigo"].Value.ToString();
                     txtNombre.Text = dgvdata.Rows[indice].Cells["Nombre"].Value.ToString();
                     txtdescripcion.Text = dgvdata.Rows[indice].Cells["Descripcion"].Value.ToString();
-
                     string categoria = dgvdata.Rows[indice].Cells["categoria"].Value.ToString();
                     string estado = dgvdata.Rows[indice].Cells["Estado"].Value.ToString();
                     foreach (Opcioncb oc in cbcategoria.Items)

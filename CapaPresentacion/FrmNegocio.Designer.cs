@@ -101,6 +101,7 @@
             this.guardabtn.TabIndex = 34;
             this.guardabtn.Text = "Guardar";
             this.guardabtn.UseVisualStyleBackColor = false;
+            this.guardabtn.Click += new System.EventHandler(this.guardabtn_Click);
             // 
             // txtdireccion
             // 

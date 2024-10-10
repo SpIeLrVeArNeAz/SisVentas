@@ -52,8 +52,8 @@ namespace CapaPresentacion
                item.Estado ==true ? "Activo" : "No Activo"
 
             });
-
             }
+
         }
 
         private void guardabtn_Click(object sender, EventArgs e)

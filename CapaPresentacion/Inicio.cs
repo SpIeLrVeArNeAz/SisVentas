@@ -97,7 +97,7 @@ namespace CapaPresentacion
 
         private void Registrar_c_Click(object sender, EventArgs e)
         {
-            AbreForms(menucompras, new frmCompras());
+            AbreForms(menucompras, new frmCompras(usuarioactual));
         }
 
         private void Detalle_com_Click(object sender, EventArgs e)
