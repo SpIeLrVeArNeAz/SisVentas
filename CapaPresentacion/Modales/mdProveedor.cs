@@ -11,8 +11,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-//video 14 arreglar
-namespace CapaPresentacion.Modales
+ namespace CapaPresentacion.Modales
 {
    
     public partial class mdProveedor : Form
@@ -29,9 +28,10 @@ namespace CapaPresentacion.Modales
             foreach (DataGridViewColumn columna in dgvdata.Columns)
             {
 
-                if (columna.Visible == true  )
+                if (columna.Visible == true)
                 {
-                    cbbusca.Items.Add(new Opcioncb() { Valor = columna.Name, Texto = columna.HeaderText });
+                    cbbusca.Items.Add(new Opcioncb() { Valor = columna.Name, Texto
+                        = columna.HeaderText });
                 }
             }
             cbbusca.DisplayMember = "Texto";
@@ -43,10 +43,9 @@ namespace CapaPresentacion.Modales
 
             foreach (Proveedores item in listaProveedores)
             {
-                dgvdata.Rows.Add(new object[] { item.IdProveedor,item.Documento, item.RazonSocial, item.Correo, item.Telefono });
+                dgvdata.Rows.Add(new object[] { item.IdProveedor, item.Documento, item.RazonSocial });
             }
         }
-
         private void dgvdata_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             int iRow = e.RowIndex;
@@ -65,9 +64,6 @@ namespace CapaPresentacion.Modales
             }
 
         }
-
-
-
         private void btnbusca_Click(object sender, EventArgs e)
         {
             string columnaFiltro = ((Opcioncb)cbbusca.SelectedItem).Valor.ToString();

@@ -39,7 +39,6 @@
             this.buscatxt = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.cbbusca = new System.Windows.Forms.ComboBox();
-            this.Btnseleccionar = new System.Windows.Forms.DataGridViewButtonColumn();
             this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.codigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -84,7 +83,6 @@
             this.dgvdata.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvdata.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvdata.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Btnseleccionar,
             this.id,
             this.codigo,
             this.nombre,
@@ -101,6 +99,7 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
             this.dgvdata.RowsDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvdata.RowTemplate.Height = 28;
+            this.dgvdata.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvdata.Size = new System.Drawing.Size(548, 248);
             this.dgvdata.TabIndex = 38;
             this.dgvdata.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvdata_CellDoubleClick_1);
@@ -189,15 +188,6 @@
             this.cbbusca.Size = new System.Drawing.Size(145, 26);
             this.cbbusca.TabIndex = 33;
             // 
-            // Btnseleccionar
-            // 
-            this.Btnseleccionar.FillWeight = 50F;
-            this.Btnseleccionar.HeaderText = " ";
-            this.Btnseleccionar.MinimumWidth = 6;
-            this.Btnseleccionar.Name = "Btnseleccionar";
-            this.Btnseleccionar.ReadOnly = true;
-            this.Btnseleccionar.Width = 50;
-            // 
             // id
             // 
             this.id.HeaderText = "Id ";
@@ -277,7 +267,6 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.ComboBox cbbusca;
         private System.Windows.Forms.DataGridView dgvdata;
-        private System.Windows.Forms.DataGridViewButtonColumn Btnseleccionar;
         private System.Windows.Forms.DataGridViewTextBoxColumn id;
         private System.Windows.Forms.DataGridViewTextBoxColumn codigo;
         private System.Windows.Forms.DataGridViewTextBoxColumn nombre;

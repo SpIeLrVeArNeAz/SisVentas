@@ -13,6 +13,10 @@ using System.Windows.Forms;
 
 namespace CapaPresentacion.Modales
 {
+
+    /// <summary>
+    /// arreglar 14, no selecciona
+    /// </summary>
     public partial class mdProducto : Form
     {
         public Producto _producto { get; set; }
@@ -36,9 +40,9 @@ namespace CapaPresentacion.Modales
             cbbusca.SelectedIndex = 0;
 
 
-            List<Producto> listaProveedores = new CN_Productos().Listar();
+            List<Producto> listaProd = new CN_Productos().Listar();
 
-            foreach (Producto item in listaProveedores)
+            foreach (Producto item in listaProd)
             {
                 dgvdata.Rows.Add(new object[] {
                item.IdProducto,
@@ -58,22 +62,18 @@ namespace CapaPresentacion.Modales
             if (iRow >= 0 && icolum > 0)
             {
                 _producto = new Producto()
-                {
-
+                { 
                     IdProducto = Convert.ToInt32(dgvdata.Rows[iRow].Cells["id"].Value.ToString()),
                     Codigo = dgvdata.Rows[iRow].Cells["Codigo"].Value.ToString(),
-                    Nombre = dgvdata.Rows[iRow].Cells["Nombre"].Value.ToString(),
-                    Stock = Convert.ToInt32(dgvdata.Rows[iRow].Cells["Stock"].Value.ToString()),
-                    PrecioCompra = Convert.ToDecimal(dgvdata.Rows[iRow].Cells["preciocom"]),
-                    PrecioVenta = Convert.ToDecimal(dgvdata.Rows[iRow].Cells["preciovent"]),
+                    Nombre = dgvdata.Rows[iRow].Cells["nombre"].Value.ToString(),
+                     Stock = Convert.ToInt32(dgvdata.Rows[iRow].Cells["Stock"].Value.ToString()),
+                    PrecioCompra = Convert.ToDecimal(dgvdata.Rows[iRow].Cells["preciocom"].Value.ToString()),
+                    PrecioVenta = Convert.ToDecimal(dgvdata.Rows[iRow].Cells["preciovent"].Value.ToString()),
                 };
                 this.DialogResult = DialogResult.OK;
                 this.Close();
             }
         }
-
-
-
         private void btnbusca_Click_1(object sender, EventArgs e)
         {
             string columnaFiltro = ((Opcioncb)cbbusca.SelectedItem).Valor.ToString();
@@ -97,8 +97,6 @@ namespace CapaPresentacion.Modales
                 row.Visible = true;
             }
         }
-
-  
     }
     }
  

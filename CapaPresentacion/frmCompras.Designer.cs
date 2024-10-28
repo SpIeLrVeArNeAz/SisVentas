@@ -130,6 +130,7 @@
             this.txttotalpaga.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.txttotalpaga.Size = new System.Drawing.Size(126, 27);
             this.txttotalpaga.TabIndex = 43;
+            this.txttotalpaga.Text = "0";
             // 
             // agregabtn
             // 
@@ -139,7 +140,7 @@
             this.agregabtn.IconChar = FontAwesome.Sharp.IconChar.Plus;
             this.agregabtn.IconColor = System.Drawing.Color.Black;
             this.agregabtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.agregabtn.Location = new System.Drawing.Point(781, 124);
+            this.agregabtn.Location = new System.Drawing.Point(890, 7);
             this.agregabtn.Name = "agregabtn";
             this.agregabtn.Size = new System.Drawing.Size(106, 95);
             this.agregabtn.TabIndex = 31;
@@ -344,7 +345,7 @@
             this.buscaprodbtn.TabIndex = 35;
             this.buscaprodbtn.Text = " ";
             this.buscaprodbtn.UseVisualStyleBackColor = false;
-           // this.buscaprodbtn.Click += new System.EventHandler(this.buscaprodbtn_Click);
+            this.buscaprodbtn.Click += new System.EventHandler(this.buscaprodbtn_Click_1);
             // 
             // txtidprod
             // 
@@ -431,7 +432,7 @@
             this.btnbusca.TabIndex = 29;
             this.btnbusca.Text = " ";
             this.btnbusca.UseVisualStyleBackColor = false;
-            //this.btnbusca.Click += new System.EventHandler(this.btnbusca_Click);
+            this.btnbusca.Click += new System.EventHandler(this.btnbusca_Click_1);
             // 
             // txtnrodoc
             // 
