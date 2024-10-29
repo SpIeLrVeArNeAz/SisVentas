@@ -46,9 +46,8 @@
             // 
             this.panel6.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.panel6.Location = new System.Drawing.Point(0, 0);
-            this.panel6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(333, 446);
+            this.panel6.Size = new System.Drawing.Size(250, 362);
             this.panel6.TabIndex = 1;
             // 
             // panel5
@@ -61,10 +60,9 @@
             this.panel5.Controls.Add(this.label11);
             this.panel5.Controls.Add(this.cancelarbtn);
             this.panel5.Controls.Add(this.label2);
-            this.panel5.Location = new System.Drawing.Point(357, 52);
-            this.panel5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel5.Location = new System.Drawing.Point(268, 42);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(623, 350);
+            this.panel5.Size = new System.Drawing.Size(467, 284);
             this.panel5.TabIndex = 0;
             // 
             // txtPass
@@ -73,12 +71,11 @@
             this.txtPass.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtPass.Cursor = System.Windows.Forms.Cursors.Hand;
             this.txtPass.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Italic);
-            this.txtPass.Location = new System.Drawing.Point(288, 144);
-            this.txtPass.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPass.Location = new System.Drawing.Point(216, 117);
             this.txtPass.Multiline = true;
             this.txtPass.Name = "txtPass";
             this.txtPass.PasswordChar = '*';
-            this.txtPass.Size = new System.Drawing.Size(204, 34);
+            this.txtPass.Size = new System.Drawing.Size(153, 28);
             this.txtPass.TabIndex = 41;
             // 
             // txtDoc
@@ -86,11 +83,10 @@
             this.txtDoc.BackColor = System.Drawing.SystemColors.HighlightText;
             this.txtDoc.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDoc.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Italic);
-            this.txtDoc.Location = new System.Drawing.Point(288, 96);
-            this.txtDoc.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDoc.Location = new System.Drawing.Point(216, 78);
             this.txtDoc.Multiline = true;
             this.txtDoc.Name = "txtDoc";
-            this.txtDoc.Size = new System.Drawing.Size(203, 37);
+            this.txtDoc.Size = new System.Drawing.Size(152, 30);
             this.txtDoc.TabIndex = 40;
             // 
             // label10
@@ -99,10 +95,9 @@
             this.label10.Cursor = System.Windows.Forms.Cursors.Default;
             this.label10.Font = new System.Drawing.Font("Nirmala UI Semilight", 12F, System.Drawing.FontStyle.Italic);
             this.label10.ForeColor = System.Drawing.Color.Black;
-            this.label10.Location = new System.Drawing.Point(144, 96);
-            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label10.Location = new System.Drawing.Point(108, 78);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(145, 37);
+            this.label10.Size = new System.Drawing.Size(109, 30);
             this.label10.TabIndex = 37;
             this.label10.Text = "Documento:";
             // 
@@ -110,10 +105,9 @@
             // 
             this.accederbtn.BackColor = System.Drawing.Color.AliceBlue;
             this.accederbtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.accederbtn.Location = new System.Drawing.Point(149, 203);
-            this.accederbtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.accederbtn.Location = new System.Drawing.Point(112, 165);
             this.accederbtn.Name = "accederbtn";
-            this.accederbtn.Size = new System.Drawing.Size(147, 49);
+            this.accederbtn.Size = new System.Drawing.Size(110, 40);
             this.accederbtn.TabIndex = 38;
             this.accederbtn.Text = "Proceder";
             this.accederbtn.UseVisualStyleBackColor = false;
@@ -124,10 +118,9 @@
             this.label11.BackColor = System.Drawing.SystemColors.HighlightText;
             this.label11.Font = new System.Drawing.Font("Nirmala UI Semilight", 15F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.Black;
-            this.label11.Location = new System.Drawing.Point(143, 144);
-            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label11.Location = new System.Drawing.Point(107, 117);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(147, 34);
+            this.label11.Size = new System.Drawing.Size(110, 28);
             this.label11.TabIndex = 36;
             this.label11.Text = "Clave:";
             // 
@@ -135,10 +128,9 @@
             // 
             this.cancelarbtn.BackColor = System.Drawing.Color.MintCream;
             this.cancelarbtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.cancelarbtn.Location = new System.Drawing.Point(345, 203);
-            this.cancelarbtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cancelarbtn.Location = new System.Drawing.Point(259, 165);
             this.cancelarbtn.Name = "cancelarbtn";
-            this.cancelarbtn.Size = new System.Drawing.Size(147, 49);
+            this.cancelarbtn.Size = new System.Drawing.Size(110, 40);
             this.cancelarbtn.TabIndex = 39;
             this.cancelarbtn.Text = "Cancelar";
             this.cancelarbtn.UseVisualStyleBackColor = false;
@@ -148,10 +140,9 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Verdana", 15.25F, System.Drawing.FontStyle.Italic);
-            this.label2.Location = new System.Drawing.Point(-7, 0);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(-5, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(215, 32);
+            this.label2.Size = new System.Drawing.Size(177, 25);
             this.label2.TabIndex = 1;
             this.label2.Text = "INICIO SESION";
             // 
@@ -161,19 +152,18 @@
             this.panel4.Controls.Add(this.panel5);
             this.panel4.Controls.Add(this.panel6);
             this.panel4.Location = new System.Drawing.Point(0, -1);
-            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1027, 447);
+            this.panel4.Size = new System.Drawing.Size(770, 363);
             this.panel4.TabIndex = 14;
+            this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
             // Login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1027, 446);
+            this.ClientSize = new System.Drawing.Size(770, 362);
             this.Controls.Add(this.panel4);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";

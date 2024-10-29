@@ -193,15 +193,6 @@ namespace CapaPresentacion
                             cbrol.SelectedIndex = indicecb;
                             break;
                         }
-                        //foreach (Opcioncb co in cbestado.Items)
-                        //{
-                        //    if (Convert.ToInt32(oc.Valor) == Convert.ToInt32(dgvdata.Rows[indice].Cells["Estado"].Value))
-                        //    {
-                        //        int indicecb = cbestado.Items.IndexOf(co);
-                        //        cbestado.SelectedIndex = indicecb;
-                        //        break;
-                        //    }
-                        //}
 
                     }
                     if (estado.Equals("Activo"))

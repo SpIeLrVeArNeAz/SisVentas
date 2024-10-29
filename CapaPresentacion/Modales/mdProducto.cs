@@ -3,12 +3,6 @@ using CapaNegocia;
 using CapaPresentacion.Utilidades;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace CapaPresentacion.Modales
@@ -39,7 +33,6 @@ namespace CapaPresentacion.Modales
             cbbusca.ValueMember = "Valor";
             cbbusca.SelectedIndex = 0;
 
-
             List<Producto> listaProd = new CN_Productos().Listar();
 
             foreach (Producto item in listaProd)
@@ -64,9 +57,9 @@ namespace CapaPresentacion.Modales
                 _producto = new Producto()
                 { 
                     IdProducto = Convert.ToInt32(dgvdata.Rows[iRow].Cells["id"].Value.ToString()),
-                    Codigo = dgvdata.Rows[iRow].Cells["Codigo"].Value.ToString(),
+                    Codigo = dgvdata.Rows[iRow].Cells["codigo"].Value.ToString(),
                     Nombre = dgvdata.Rows[iRow].Cells["nombre"].Value.ToString(),
-                     Stock = Convert.ToInt32(dgvdata.Rows[iRow].Cells["Stock"].Value.ToString()),
+                    Stock = Convert.ToInt32(dgvdata.Rows[iRow].Cells["Stock"].Value.ToString()),
                     PrecioCompra = Convert.ToDecimal(dgvdata.Rows[iRow].Cells["preciocom"].Value.ToString()),
                     PrecioVenta = Convert.ToDecimal(dgvdata.Rows[iRow].Cells["preciovent"].Value.ToString()),
                 };
