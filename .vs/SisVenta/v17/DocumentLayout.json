@@ -3,36 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\user\\source\\repos\\SpIeLrVeArNeAz\\SisVentas\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AFB9042A-5C31-444D-A354-CD86B1762D4C}|CapaPresentacion\\CapaPresentacion.csproj|C:\\Users\\user\\source\\repos\\SpIeLrVeArNeAz\\SisVentas\\capapresentacion\\frmcompras.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{AFB9042A-5C31-444D-A354-CD86B1762D4C}|CapaPresentacion\\CapaPresentacion.csproj|c:\\users\\user\\source\\repos\\spielrvearneaz\\sisventas\\capapresentacion\\frmcompras.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AFB9042A-5C31-444D-A354-CD86B1762D4C}|CapaPresentacion\\CapaPresentacion.csproj|solutionrelative:capapresentacion\\frmcompras.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AFB9042A-5C31-444D-A354-CD86B1762D4C}|CapaPresentacion\\CapaPresentacion.csproj|C:\\Users\\user\\source\\repos\\SpIeLrVeArNeAz\\SisVentas\\capapresentacion\\frmcompras.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{1639C2EE-4D05-4FC8-AAD6-C2918E3B61E4}|CapaNegocia\\CapaNegocia.csproj|c:\\users\\user\\source\\repos\\spielrvearneaz\\sisventas\\capanegocia\\cn_compra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1639C2EE-4D05-4FC8-AAD6-C2918E3B61E4}|CapaNegocia\\CapaNegocia.csproj|solutionrelative:capanegocia\\cn_compra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3E965145-42F4-4B36-8674-AC89EDC62449}|CapaData\\CapaData.csproj|c:\\users\\user\\source\\repos\\spielrvearneaz\\sisventas\\capadata\\cd_compra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3E965145-42F4-4B36-8674-AC89EDC62449}|CapaData\\CapaData.csproj|solutionrelative:capadata\\cd_compra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AFB9042A-5C31-444D-A354-CD86B1762D4C}|CapaPresentacion\\CapaPresentacion.csproj|c:\\users\\user\\source\\repos\\spielrvearneaz\\sisventas\\capapresentacion\\frmcompras.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{AFB9042A-5C31-444D-A354-CD86B1762D4C}|CapaPresentacion\\CapaPresentacion.csproj|solutionrelative:capapresentacion\\frmcompras.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AFB9042A-5C31-444D-A354-CD86B1762D4C}|CapaPresentacion\\CapaPresentacion.csproj|c:\\users\\user\\source\\repos\\spielrvearneaz\\sisventas\\capapresentacion\\modales\\mdproveedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{AFB9042A-5C31-444D-A354-CD86B1762D4C}|CapaPresentacion\\CapaPresentacion.csproj|solutionrelative:capapresentacion\\modales\\mdproveedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{3E965145-42F4-4B36-8674-AC89EDC62449}|CapaData\\CapaData.csproj|c:\\users\\user\\source\\repos\\spielrvearneaz\\sisventas\\capadata\\cd_usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3E965145-42F4-4B36-8674-AC89EDC62449}|CapaData\\CapaData.csproj|solutionrelative:capadata\\cd_usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AFB9042A-5C31-444D-A354-CD86B1762D4C}|CapaPresentacion\\CapaPresentacion.csproj|C:\\Users\\user\\source\\repos\\SpIeLrVeArNeAz\\SisVentas\\capapresentacion\\modales\\mdproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{AFB9042A-5C31-444D-A354-CD86B1762D4C}|CapaPresentacion\\CapaPresentacion.csproj|solutionrelative:capapresentacion\\modales\\mdproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AFB9042A-5C31-444D-A354-CD86B1762D4C}|CapaPresentacion\\CapaPresentacion.csproj|C:\\Users\\user\\source\\repos\\SpIeLrVeArNeAz\\SisVentas\\capapresentacion\\modales\\mdproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AFB9042A-5C31-444D-A354-CD86B1762D4C}|CapaPresentacion\\CapaPresentacion.csproj|solutionrelative:capapresentacion\\modales\\mdproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AFB9042A-5C31-444D-A354-CD86B1762D4C}|CapaPresentacion\\CapaPresentacion.csproj|c:\\users\\user\\source\\repos\\spielrvearneaz\\sisventas\\capapresentacion\\frmusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AFB9042A-5C31-444D-A354-CD86B1762D4C}|CapaPresentacion\\CapaPresentacion.csproj|solutionrelative:capapresentacion\\frmusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AFB9042A-5C31-444D-A354-CD86B1762D4C}|CapaPresentacion\\CapaPresentacion.csproj|c:\\users\\user\\source\\repos\\spielrvearneaz\\sisventas\\capapresentacion\\frmusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{AFB9042A-5C31-444D-A354-CD86B1762D4C}|CapaPresentacion\\CapaPresentacion.csproj|solutionrelative:capapresentacion\\frmusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AFB9042A-5C31-444D-A354-CD86B1762D4C}|CapaPresentacion\\CapaPresentacion.csproj|c:\\users\\user\\source\\repos\\spielrvearneaz\\sisventas\\capapresentacion\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AFB9042A-5C31-444D-A354-CD86B1762D4C}|CapaPresentacion\\CapaPresentacion.csproj|solutionrelative:capapresentacion\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1639C2EE-4D05-4FC8-AAD6-C2918E3B61E4}|CapaNegocia\\CapaNegocia.csproj|c:\\users\\user\\source\\repos\\spielrvearneaz\\sisventas\\capanegocia\\cn_usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1639C2EE-4D05-4FC8-AAD6-C2918E3B61E4}|CapaNegocia\\CapaNegocia.csproj|solutionrelative:capanegocia\\cn_usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -59,62 +51,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
-            }
-          ]
-        },
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 4,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "frmUsers.cs",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\SpIeLrVeArNeAz\\SisVentas\\CapaPresentacion\\frmUsers.cs",
-              "RelativeDocumentMoniker": "CapaPresentacion\\frmUsers.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\SpIeLrVeArNeAz\\SisVentas\\CapaPresentacion\\frmUsers.cs",
-              "RelativeToolTip": "CapaPresentacion\\frmUsers.cs",
-              "ViewState": "AgIAAJEAAAAAAAAAAAAnwJgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-29T15:41:54.181Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "mdProveedor.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\SpIeLrVeArNeAz\\SisVentas\\CapaPresentacion\\Modales\\mdProveedor.cs",
-              "RelativeDocumentMoniker": "CapaPresentacion\\Modales\\mdProveedor.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\SpIeLrVeArNeAz\\SisVentas\\CapaPresentacion\\Modales\\mdProveedor.cs [Design]",
-              "RelativeToolTip": "CapaPresentacion\\Modales\\mdProveedor.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-29T13:20:50.51Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "mdProducto.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\SpIeLrVeArNeAz\\SisVentas\\CapaPresentacion\\Modales\\mdProducto.cs",
-              "RelativeDocumentMoniker": "CapaPresentacion\\Modales\\mdProducto.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\SpIeLrVeArNeAz\\SisVentas\\CapaPresentacion\\Modales\\mdProducto.cs [Design]",
-              "RelativeToolTip": "CapaPresentacion\\Modales\\mdProducto.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-28T00:55:52.8Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "mdProducto.cs",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\SpIeLrVeArNeAz\\SisVentas\\CapaPresentacion\\Modales\\mdProducto.cs",
-              "RelativeDocumentMoniker": "CapaPresentacion\\Modales\\mdProducto.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\SpIeLrVeArNeAz\\SisVentas\\CapaPresentacion\\Modales\\mdProducto.cs",
-              "RelativeToolTip": "CapaPresentacion\\Modales\\mdProducto.cs",
-              "ViewState": "AgIAAEQAAAAAAAAAAAAmwEEAAAA0AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-28T00:55:56.666Z",
-              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -122,48 +58,75 @@
               "Title": "frmCompras.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\SpIeLrVeArNeAz\\SisVentas\\CapaPresentacion\\frmCompras.cs",
               "RelativeDocumentMoniker": "CapaPresentacion\\frmCompras.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\SpIeLrVeArNeAz\\SisVentas\\CapaPresentacion\\frmCompras.cs",
-              "RelativeToolTip": "CapaPresentacion\\frmCompras.cs",
-              "ViewState": "AgIAALAAAAAAAAAAAAAxwLwAAAA+AAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\SpIeLrVeArNeAz\\SisVentas\\CapaPresentacion\\frmCompras.cs*",
+              "RelativeToolTip": "CapaPresentacion\\frmCompras.cs*",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAYwBsAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-21T13:54:03.192Z",
+              "WhenOpened": "2024-11-05T18:41:54.66Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "frmCompras.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\SpIeLrVeArNeAz\\SisVentas\\CapaPresentacion\\frmCompras.cs",
+              "RelativeDocumentMoniker": "CapaPresentacion\\frmCompras.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\SpIeLrVeArNeAz\\SisVentas\\CapaPresentacion\\frmCompras.cs [Design]*",
+              "RelativeToolTip": "CapaPresentacion\\frmCompras.cs [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T18:41:40.502Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CD_Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\SpIeLrVeArNeAz\\SisVentas\\CapaData\\CD_Usuario.cs",
+              "RelativeDocumentMoniker": "CapaData\\CD_Usuario.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\SpIeLrVeArNeAz\\SisVentas\\CapaData\\CD_Usuario.cs",
+              "RelativeToolTip": "CapaData\\CD_Usuario.cs",
+              "ViewState": "AgIAADkAAAAAAAAAAAA/wFEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T14:59:15.474Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CN_usuario.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\SpIeLrVeArNeAz\\SisVentas\\CapaNegocia\\CN_usuario.cs",
+              "RelativeDocumentMoniker": "CapaNegocia\\CN_usuario.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\SpIeLrVeArNeAz\\SisVentas\\CapaNegocia\\CN_usuario.cs",
+              "RelativeToolTip": "CapaNegocia\\CN_usuario.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T18:31:56.251Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "frmCompras.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\SpIeLrVeArNeAz\\SisVentas\\CapaPresentacion\\frmCompras.cs",
-              "RelativeDocumentMoniker": "CapaPresentacion\\frmCompras.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\SpIeLrVeArNeAz\\SisVentas\\CapaPresentacion\\frmCompras.cs [Design]",
-              "RelativeToolTip": "CapaPresentacion\\frmCompras.cs [Design]",
+              "Title": "CN_Compra.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\SpIeLrVeArNeAz\\SisVentas\\CapaNegocia\\CN_Compra.cs",
+              "RelativeDocumentMoniker": "CapaNegocia\\CN_Compra.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\SpIeLrVeArNeAz\\SisVentas\\CapaNegocia\\CN_Compra.cs",
+              "RelativeToolTip": "CapaNegocia\\CN_Compra.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-25T15:50:45.443Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-11-05T18:31:48.307Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "frmUsers.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\SpIeLrVeArNeAz\\SisVentas\\CapaPresentacion\\frmUsers.cs",
-              "RelativeDocumentMoniker": "CapaPresentacion\\frmUsers.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\SpIeLrVeArNeAz\\SisVentas\\CapaPresentacion\\frmUsers.cs [Design]",
-              "RelativeToolTip": "CapaPresentacion\\frmUsers.cs [Design]",
+              "DocumentIndex": 2,
+              "Title": "CD_Compra.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\SpIeLrVeArNeAz\\SisVentas\\CapaData\\CD_Compra.cs",
+              "RelativeDocumentMoniker": "CapaData\\CD_Compra.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\SpIeLrVeArNeAz\\SisVentas\\CapaData\\CD_Compra.cs",
+              "RelativeToolTip": "CapaData\\CD_Compra.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAAwDoAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-29T15:41:47.513Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\SpIeLrVeArNeAz\\SisVentas\\CapaPresentacion\\Program.cs",
-              "RelativeDocumentMoniker": "CapaPresentacion\\Program.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\SpIeLrVeArNeAz\\SisVentas\\CapaPresentacion\\Program.cs",
-              "RelativeToolTip": "CapaPresentacion\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAADwvw0AAABwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-29T15:20:33.321Z",
+              "WhenOpened": "2024-11-05T14:57:10.63Z",
               "EditorCaption": ""
             }
           ]

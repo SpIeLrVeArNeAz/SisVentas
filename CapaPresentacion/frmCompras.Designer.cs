@@ -65,8 +65,8 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.label11 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.producto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.IdProducto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dc_Producto = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PrecioCompra = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.precioventa = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -109,6 +109,7 @@
             this.guardabtn.TabIndex = 45;
             this.guardabtn.Text = "Guardar";
             this.guardabtn.UseVisualStyleBackColor = false;
+            this.guardabtn.Click += new System.EventHandler(this.guardabtn_Click);
             // 
             // label10
             // 
@@ -165,8 +166,8 @@
             this.dgvdata.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvdata.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvdata.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Id,
-            this.producto,
+            this.IdProducto,
+            this.dc_Producto,
             this.PrecioCompra,
             this.precioventa,
             this.cantidad,
@@ -264,6 +265,7 @@
             this.preve.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.preve.Size = new System.Drawing.Size(95, 27);
             this.preve.TabIndex = 38;
+            this.preve.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.preve_KeyPress);
             // 
             // txtpreco
             // 
@@ -275,6 +277,7 @@
             this.txtpreco.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.txtpreco.Size = new System.Drawing.Size(95, 27);
             this.txtpreco.TabIndex = 37;
+            this.txtpreco.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtpreco_KeyPress);
             // 
             // txtnprod
             // 
@@ -363,7 +366,7 @@
             this.txtidprov.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.txtidprov.Size = new System.Drawing.Size(36, 23);
             this.txtidprov.TabIndex = 31;
-            // 
+             // 
             // txtnomprov
             // 
             this.txtnomprov.AcceptsTab = true;
@@ -518,20 +521,20 @@
             this.panel4.Size = new System.Drawing.Size(1086, 13);
             this.panel4.TabIndex = 30;
             // 
-            // Id
+            // IdProducto
             // 
-            this.Id.HeaderText = "Idproducto";
-            this.Id.MinimumWidth = 6;
-            this.Id.Name = "Id";
-            this.Id.Visible = false;
-            this.Id.Width = 125;
+            this.IdProducto.HeaderText = "Idproducto";
+            this.IdProducto.MinimumWidth = 6;
+            this.IdProducto.Name = "IdProducto";
+            this.IdProducto.Visible = false;
+            this.IdProducto.Width = 125;
             // 
-            // producto
+            // dc_Producto
             // 
-            this.producto.HeaderText = "Producto";
-            this.producto.MinimumWidth = 6;
-            this.producto.Name = "producto";
-            this.producto.Width = 200;
+            this.dc_Producto.HeaderText = "Producto";
+            this.dc_Producto.MinimumWidth = 6;
+            this.dc_Producto.Name = "dc_Producto";
+            this.dc_Producto.Width = 200;
             // 
             // PrecioCompra
             // 
@@ -629,8 +632,8 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Id;
-        private System.Windows.Forms.DataGridViewTextBoxColumn producto;
+        private System.Windows.Forms.DataGridViewTextBoxColumn IdProducto;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dc_Producto;
         private System.Windows.Forms.DataGridViewTextBoxColumn PrecioCompra;
         private System.Windows.Forms.DataGridViewTextBoxColumn precioventa;
         private System.Windows.Forms.DataGridViewTextBoxColumn cantidad;

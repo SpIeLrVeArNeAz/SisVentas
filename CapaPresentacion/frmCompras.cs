@@ -3,6 +3,7 @@ using CapaNegocia;
 using CapaPresentacion.Modales;
 using CapaPresentacion.Utilidades;
 using System;
+using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Windows.Controls;
@@ -13,28 +14,28 @@ namespace CapaPresentacion
     public partial class frmCompras : Form
     {
         private Usuario _Usuario;
-        public frmCompras( Usuario oUsuario = null)
+        public frmCompras(Usuario oUsuario = null)
         {
             _Usuario = oUsuario;
+            var dt = dgvdata;
             InitializeComponent();
         }
 
- 
-        //video 14, arreglando dise;o
+        //hay una exepcion aquis Curso de Sistema de Ventas en C# y SQL Server - Parte 16/ 39:29
 
         private void frmCompras_Load(object sender, EventArgs e)
         {
-            //MessageBox.Show(_Usuario.NombreCompleto);
+            MessageBox.Show(_Usuario.NombreCompleto);
 
 
-            cbtpdoc.Items.Add(new Opcioncb() { Valor =  "Boleta", Texto = "Boleta" });
-            cbtpdoc.Items.Add(new Opcioncb() { Valor = "Factura", Texto = "Factura"});
+            cbtpdoc.Items.Add(new Opcioncb() { Valor = "Boleta", Texto = "Boleta" });
+            cbtpdoc.Items.Add(new Opcioncb() { Valor = "Factura", Texto = "Factura" });
             cbtpdoc.DisplayMember = "Texto";
             cbtpdoc.ValueMember = "Valor";
             cbtpdoc.SelectedIndex = 0;
 
             txtfecha.Text = DateTime.Now.ToString("dd/MM/yyyy");
-           
+
             txtidprov.Text = "0";
             txtidprod.Text = "0";
 
@@ -43,17 +44,19 @@ namespace CapaPresentacion
 
         private void btnbusca_Click_1(object sender, EventArgs e) //buscaprovedoor
         {
-            using(var modal = new mdProveedor())
+            using (var modal = new mdProveedor())
             {
                 var result = modal.ShowDialog();
 
-                if(result == DialogResult.OK)
+                if (result == DialogResult.OK)
                 {
-                    txtidprod.Text = modal.__Proveedor.IdProveedor.ToString();
+                    txtidprov.Text = modal.__Proveedor.IdProveedor.ToString();
                     txtnrodoc.Text = modal.__Proveedor.Documento;
                     txtnomprov.Text = modal.__Proveedor.RazonSocial;
 
-                } else {
+                }
+                else
+                {
                     txtnrodoc.Select();
                 }
 
@@ -72,22 +75,22 @@ namespace CapaPresentacion
                     txtprd.Text = modal._producto.Codigo;
                     txtnprod.Text = modal._producto.Nombre;
 
-                    txtpreco. Select();
- 
+                    txtpreco.Select();
+
                 }
                 else
                 {
                     txtprd.Select();
                 }
             }
-    }
+        }
 
-        //VIdeo 15, cambiar esta parte 27:27
-
+       
         private void txtprd_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyData == Keys.Enter) {
-                Producto oProducto = new CN_Productos().Listar().Where(p => p.Codigo ==  txtprd.Text && p.Estado ==  true).FirstOrDefault();
+            if (e.KeyData == Keys.Enter)
+            {
+                Producto oProducto = new CN_Productos().Listar().Where(p => p.Codigo == txtprd.Text && p.Estado == true).FirstOrDefault();
 
                 if (oProducto != null)
                 {
@@ -96,7 +99,8 @@ namespace CapaPresentacion
                     txtnprod.Text = oProducto.Nombre;
                     txtpreco.Select();
                 }
-                else {
+                else
+                {
                     txtprd.BackColor = Color.MistyRose;
                     txtidprod.Text = "0";
                     txtnprod.Text = " ";
@@ -113,10 +117,10 @@ namespace CapaPresentacion
             decimal precioventa = 0;
             bool producto_existente = false;
 
-            if (int.Parse(txtidprod.Text)==0)
+            if (int.Parse(txtidprod.Text) == 0)
             {
                 MessageBox.Show("Debe ingresar un producto", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                return; 
+                return;
             }
 
             if (!decimal.TryParse(txtpreco.Text, out preciocompra))
@@ -142,7 +146,8 @@ namespace CapaPresentacion
                 }
             }
 
-            if (!producto_existente) {
+            if (!producto_existente)
+            {
 
                 dgvdata.Rows.Add(new object[] {
 
@@ -173,10 +178,10 @@ namespace CapaPresentacion
         private void Calcula()
         {
             decimal total = 0;
-            if (dgvdata.Rows.Count>0)
+            if (dgvdata.Rows.Count > 0)
             {
                 foreach (DataGridViewRow row in dgvdata.Rows)
-                    total += Convert.ToDecimal(row.Cells["SubTotal"].Value.ToString());                
+                    total += Convert.ToDecimal(row.Cells["SubTotal"].Value.ToString());
             }
             txttotalpaga.Text = total.ToString("0.00");
         }
@@ -204,41 +209,142 @@ namespace CapaPresentacion
         private void dgvdata_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             {
-                if (dgvdata.Columns[e.ColumnIndex].Name == "Btnseleccionar")
+                if (dgvdata.Columns[e.ColumnIndex].Name == "btn")
                 {
                     int indice = e.RowIndex;
 
                     if (indice >= 0)
                     {
-                        txtindice.Text = indice.ToString();
-                        regid.Text = dgvdata.Rows[indice].Cells["Id"].Value.ToString();
-                        txtDocumento.Text = dgvdata.Rows[indice].Cells["Documento"].Value.ToString();
-                        txtNombreCompleto.Text = dgvdata.Rows[indice].Cells["NombreCompleto"].Value.ToString();
-                        txtCorr.Text = dgvdata.Rows[indice].Cells["Correo"].Value.ToString();
-                        txtClave.Text = dgvdata.Rows[indice].Cells["Clave"].Value.ToString();
-                        txtConfirma.Text = dgvdata.Rows[indice].Cells["Clave"].Value.ToString();
-                        string estado = dgvdata.Rows[indice].Cells["Estado"].Value.ToString();
-                        foreach (Opcioncb oc in cbrol.Items)
-                        {
-                            if (Convert.ToInt32(oc.Valor) == Convert.ToInt32(dgvdata.Rows[indice].Cells["IdRol"].Value))
-                            {
-                                int indicecb = cbrol.Items.IndexOf(oc);
-                                cbrol.SelectedIndex = indicecb;
-                                break;
-                            }
-
-                        }
-                        if (estado.Equals("Activo"))
-                        {
-                            cbestado.SelectedIndex = 0;
-                        }
-                        else
-                        {
-                            cbestado.SelectedIndex = 1;
-                        }
+                        dgvdata.Rows.RemoveAt(indice);
+                        Calcula();
                     }
                 }
             }
+        }
+
+        private void txtpreco_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (Char.IsDigit(e.KeyChar))
+            {
+                e.Handled = false;
             }
+            else
+            {
+                if (txtpreco.Text.Trim().Length == 0 && e.KeyChar.ToString() == ".")
+                {
+                    e.Handled = true;
+                }
+                else
+                {
+                    if (Char.IsControl(e.KeyChar) || e.KeyChar.ToString() == ".")
+                    {
+                        e.Handled = false ;
+                    }
+                    else
+                    {
+                        e.Handled = true;
+                    }
+                }
+            }
+        }
+
+        private void preve_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (Char.IsDigit(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            else
+            {
+                if (txtpreco.Text.Trim().Length == 0 && e.KeyChar.ToString() == ".")
+                {
+                    e.Handled = true;
+                }
+                else
+                {
+                    if (Char.IsControl(e.KeyChar) || e.KeyChar.ToString() == ".")
+                    {
+                        e.Handled = false;
+                    }
+                    else
+                    {
+                        e.Handled = true;
+                    }
+                }
+            }
+        }
+
+        private void guardabtn_Click(object sender, EventArgs e)
+        {
+            if (Convert.ToInt32(txtidprov.Text)==0)
+            {
+                MessageBox.Show("Debe seleccionar un proveedor", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                return;
+            }
+            if (dgvdata.Rows.Count <1)
+            {
+                MessageBox.Show("Debe Ingresar productos en la compra", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                return;
+            }
+
+            DataTable detalle_compra = new DataTable();
+
+            detalle_compra.Columns.Add("IdProducto",typeof(int));
+            detalle_compra.Columns.Add("PrecioCompra", typeof(decimal));
+            detalle_compra.Columns.Add("PrecioVenta", typeof(decimal));
+            detalle_compra.Columns.Add("Cantidad", typeof(int));
+            detalle_compra.Columns.Add("MontoTotal", typeof(decimal));
+
+            foreach (DataGridViewRow row in dgvdata.Rows) 
+            {
+                detalle_compra.Rows.Add(
+                    new object[]
+                    {
+                       Convert.ToInt32( row.Cells["IdProducto"].Value.ToString()),
+                       row.Cells["PrecioCompra"].Value.ToString(),
+                       row.Cells["PrecioVenta"].Value.ToString(),
+                       row.Cells["Cantidad"].Value.ToString(),
+                       txttotalpaga.Text.ToString(),
+                    });
+             }
+
+            int idcorrelativo = new CN_Compra().ObtenerCorrelativo();
+            string numerodocumento = string.Format("{0:00000}", idcorrelativo);
+
+            Compra oCompra = new Compra()
+            {
+                oUsuario = new Usuario() { IdUsuario = _Usuario.IdUsuario},
+                oProveedor = new Proveedores() { IdProveedor = Convert.ToInt32(txtidprov.Text)},
+                TipoDocumento =((Opcioncb)cbtpdoc.SelectedItem).Texto,
+                NumeroDocumento = numerodocumento,
+                MontoTotal = Convert.ToDecimal(txttotalpaga.Text),
+            };
+
+            string mensaje = string.Empty;
+            bool respuesta = new CN_Compra().Registrar(oCompra,detalle_compra, out mensaje);
+
+            if (respuesta)
+            {
+                var result = MessageBox.Show("Numero de compra generado: \n"+numerodocumento + "\n\n Deseas copiar al PortaPapel?","Mensaje"
+                    ,MessageBoxButtons.YesNo,MessageBoxIcon.Information);
+
+                if (result == DialogResult.Yes) {
+                    Clipboard.SetText(numerodocumento);
+
+                    txtidprov.Text = "0";
+                    txtnrodoc.Text = "";
+                    txtnomprov.Text = "";
+                    dgvdata.Rows.Clear();
+                    Calcula();
+                }
+                else
+                {
+                    MessageBox.Show(mensaje, "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                }
+            }
+        
+        }
+
+    
     }
 }
