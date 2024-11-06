@@ -25,7 +25,7 @@ namespace CapaPresentacion
 
         private void frmCompras_Load(object sender, EventArgs e)
         {
-            MessageBox.Show(_Usuario.NombreCompleto);
+          //  MessageBox.Show(_Usuario.NombreCompleto);
 
 
             cbtpdoc.Items.Add(new Opcioncb() { Valor = "Boleta", Texto = "Boleta" });
@@ -313,7 +313,7 @@ namespace CapaPresentacion
 
             Compra oCompra = new Compra()
             {
-                oUsuario = new Usuario() { IdUsuario = _Usuario.IdUsuario},
+               // oUsuario = new Usuario() { IdUsuario = _Usuario.IdUsuario},
                 oProveedor = new Proveedores() { IdProveedor = Convert.ToInt32(txtidprov.Text)},
                 TipoDocumento =((Opcioncb)cbtpdoc.SelectedItem).Texto,
                 NumeroDocumento = numerodocumento,
